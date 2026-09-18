@@ -1,0 +1,12 @@
+{
+  "model": "e5",
+  "model_name": "intfloat/multilingual-e5-large",
+  "recall@1": 1.0,
+  "recall@3": 1.0,
+  "recall@5": 1.0,
+  "mrr": 1.0,
+  "avg_query_time_ms": 356.1660726001719,
+  "corpus_embedding_time_s": 219.91318325800057,
+  "model_load_time_s": 70.80823112899998,
+  "dimension": 1024
+}
