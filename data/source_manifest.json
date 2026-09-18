@@ -1,7 +1,7 @@
 {
   "corpus_name": "Saudi Labor Law RAG Corpus",
   "corpus_version": "1.0",
-  "retrieval_date": "2026-09-18",
+  "retrieval_date": "2026-09-18",https
   "jurisdiction": "Saudi Arabia",
   "language": "ar",
   "sources": [
@@ -10,7 +10,7 @@
       "title_ar": "نظام العمل",
       "authority": "وزارة الموارد البشرية والتنمية الاجتماعية",
       "source_type": "law",
-      "official_page_url": "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%B9%D9%85%D9%84",
+      "official_page_url": "://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%B9%D9%85%D9%84",
       "document_url": "https://www.hrsd.gov.sa/sites/default/files/2025-11/labor-law.pdf",
       "local_raw_file": "data/raw/labor_law/labor_law.pdf",
       "original_decree": "المرسوم الملكي رقم م/51 بتاريخ 23/8/1426هـ",
