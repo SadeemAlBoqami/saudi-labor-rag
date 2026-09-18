@@ -1,1 +1,45 @@
-
+{
+  "corpus_name": "Saudi Labor Law RAG Corpus",
+  "corpus_version": "1.0",
+  "retrieval_date": "2026-09-18",
+  "jurisdiction": "Saudi Arabia",
+  "language": "ar",
+  "sources": [
+    {
+      "source_id": "labor_law",
+      "title_ar": "نظام العمل",
+      "authority": "وزارة الموارد البشرية والتنمية الاجتماعية",
+      "source_type": "law",
+      "official_page_url": "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%B9%D9%85%D9%84",
+      "document_url": "https://www.hrsd.gov.sa/sites/default/files/2025-11/labor-law.pdf",
+      "local_raw_file": "data/raw/labor_law/labor_law.pdf",
+      "original_decree": "المرسوم الملكي رقم م/51 بتاريخ 23/8/1426هـ",
+      "latest_amendment": "المرسوم الملكي رقم م/44 بتاريخ 8/2/1446هـ",
+      "retrieved_at": "2026-09-18",
+      "status": "active",
+      "structure": {
+        "has_chapters": true,
+        "has_articles": true
+      }
+    },
+    {
+      "source_id": "executive_regulations",
+      "title_ar": "اللائحة التنفيذية لنظام العمل وملحقاتها",
+      "authority": "وزارة الموارد البشرية والتنمية الاجتماعية",
+      "source_type": "executive_regulation",
+      "official_page_url": "https://www.hrsd.gov.sa/knowledge-centre/decisions-and-regulations/regulation-and-procedures/%D8%A7%D9%84%D9%84%D8%A7%D8%A6%D8%AD%D8%A9-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9-%D9%84%D9%86%D8%B8%D8%A7%D9%85-%D8%A7%D9%84%D8%B9%D9%85%D9%84-%D9%88%D9%85%D9%84%D8%AD%D9%82%D8%A7%D8%AA%D9%87%D8%A7",
+      "document_url": "https://www.hrsd.gov.sa/sites/default/files/2025-04/%D8%A7%D9%84%D9%84%D8%A7%D8%A6%D8%AD%D8%A9%20%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0%D9%8A%D8%A9%20%D9%84%D9%86%D8%B8%D8%A7%D9%85%20%D8%A7%D9%84%D8%B9%D9%85%D9%84%20%D9%88%D9%85%D9%84%D8%AD%D9%82%D8%A7%D8%AA%D9%87%D8%A7.pdf",
+      "local_raw_file": "data/raw/executive_regulations/executive_regulations.pdf",
+      "ministerial_decision": "115921",
+      "decision_date_hijri": "19/8/1446هـ",
+      "effective_date": "2025-02-19",
+      "supersedes": "القرار الوزاري رقم 70273 وتعديلاته",
+      "retrieved_at": "2026-09-18",
+      "status": "active",
+      "structure": {
+        "has_articles": true,
+        "has_appendices": true
+      }
+    }
+  ]
+}
