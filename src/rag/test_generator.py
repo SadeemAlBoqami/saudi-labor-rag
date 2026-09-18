@@ -6,18 +6,16 @@ from src.rag.generator import QwenGenerator
 
 query = "كم مدة فترة التجربة؟"
 
-print("Loading retriever...")
 retriever = LaborLawRetriever()
 
-print("Retrieving legal context...")
 results = retriever.search(
     query,
-    top_k=3,
+    top_k=1,
 )
 
 context = build_context(
     results,
-    top_k=3,
+    top_k=1,
 )
 
 prompt = build_prompt(
@@ -25,17 +23,17 @@ prompt = build_prompt(
     context,
 )
 
-print("Loading generator...")
 generator = QwenGenerator()
-
-print()
-print("Generating answer...")
-print()
 
 answer = generator.generate(
     prompt,
     max_new_tokens=256,
 )
+
+sources = [
+    result["article_heading"]
+    for result in results
+]
 
 print("=" * 70)
 print("QUESTION:")
@@ -44,4 +42,10 @@ print(query)
 print()
 print("ANSWER:")
 print(answer)
+
+print()
+print("SOURCES:")
+for source in sources:
+    print(f"- {source}")
+
 print("=" * 70)

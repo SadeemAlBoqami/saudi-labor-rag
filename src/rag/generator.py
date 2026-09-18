@@ -1,73 +1,46 @@
-import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM
+import requests
 
 
-MODEL_NAME = "Qwen/Qwen3-4B"
+API_URL = "http://127.0.0.1:8080/v1/chat/completions"
 
 
 class QwenGenerator:
     def __init__(self):
-        print("Loading Qwen3-4B tokenizer...")
-
-        self.tokenizer = AutoTokenizer.from_pretrained(
-            MODEL_NAME
-        )
-
-        print("Loading Qwen3-4B model...")
-
-        self.model = AutoModelForCausalLM.from_pretrained(
-            MODEL_NAME,
-            torch_dtype="auto",
-            device_map="auto",
-        )
-
-        print("✓ Qwen3-4B loaded")
+        print("Using local Gemma 3 4B Q4_K_M via llama.cpp")
 
     def generate(
         self,
         prompt: str,
-        max_new_tokens: int = 256,
+        max_new_tokens: int = 512,
     ) -> str:
 
-        messages = [
-            {
-                "role": "user",
-                "content": prompt,
-            }
-        ]
-
-        inputs = self.tokenizer.apply_chat_template(
-            messages,
-            add_generation_prompt=True,
-            tokenize=True,
-            return_dict=True,
-            return_tensors="pt",
-            enable_thinking=False,
-        )
-
-        inputs = {
-            key: value.to(self.model.device)
-            for key, value in inputs.items()
+        payload = {
+            "model": "gemma-3-4b-it",
+            "messages": [
+                {
+                    "role": "user",
+                    "content": prompt,
+                }
+            ],
+            "temperature": 0.2,
+            "max_tokens": max_new_tokens,
         }
 
-        with torch.inference_mode():
-            outputs = self.model.generate(
-                **inputs,
-                max_new_tokens=max_new_tokens,
-                do_sample=True,
-                temperature=0.7,
-                top_p=0.8,
-                top_k=20,
-            )
-
-        generated_tokens = outputs[
-            0,
-            inputs["input_ids"].shape[-1]:
-        ]
-
-        answer = self.tokenizer.decode(
-            generated_tokens,
-            skip_special_tokens=True,
+        response = requests.post(
+            API_URL,
+            json=payload,
+            timeout=300,
         )
 
-        return answer.strip()
+        response.raise_for_status()
+
+        data = response.json()
+
+        message = data["choices"][0]["message"]
+
+        answer = message.get(
+            "content",
+            ""
+        ).strip()
+
+        return answer

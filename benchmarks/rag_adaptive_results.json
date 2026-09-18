@@ -1,0 +1,267 @@
+{
+  "summary": {
+    "total_questions": 15,
+    "in_domain_questions": 12,
+    "out_of_domain_questions": 3,
+    "retrieval_accuracy_final": 1.0,
+    "in_domain_answer_rate": 0.8333333333333334,
+    "refusal_accuracy": 1.0,
+    "fallback_rate": 0.3333333333333333,
+    "avg_end_to_end_time_s": 1.3230109066644218,
+    "embedding_model": "BAAI/bge-m3",
+    "generator": "Gemma 3 4B Q4_K_M",
+    "retrieval_strategy": "Top-1 -> Top-3 fallback"
+  },
+  "results": [
+    {
+      "id": 1,
+      "query": "كم مدة فترة التجربة؟",
+      "expected_article": "المادة الثالثة والخمسون",
+      "should_refuse": false,
+      "sources": [
+        "المادة الثالثة والخمسون"
+      ],
+      "retrieval_k": 1,
+      "fallback_used": false,
+      "retrieval_hit": true,
+      "answered_in_domain": true,
+      "refused_correctly": null,
+      "generation_time_s": 1.314008700021077,
+      "answer": "ألا يزيد مجموع المدة في جميع الأحوال على (مائة وثمانين) يوماً."
+    },
+    {
+      "id": 2,
+      "query": "متى يجوز لصاحب العمل فصل العامل دون مكافأة أو إشعار؟",
+      "expected_article": "المادة الثمانون",
+      "should_refuse": false,
+      "sources": [
+        "المادة الثمانون",
+        "المادة الحادية والثمانون",
+        "المادة الخامسة والخمسون بعد المائة"
+      ],
+      "retrieval_k": 3,
+      "fallback_used": true,
+      "retrieval_hit": true,
+      "answered_in_domain": false,
+      "refused_correctly": null,
+      "generation_time_s": 1.9267785999982152,
+      "answer": "لا توجد معلومات كافية في النصوص المسترجعة للإجابة عن هذا السؤال."
+    },
+    {
+      "id": 3,
+      "query": "متى يحق للعامل ترك العمل دون إشعار مع الاحتفاظ بحقوقه؟",
+      "expected_article": "المادة الحادية والثمانون",
+      "should_refuse": false,
+      "sources": [
+        "المادة الحادية والثمانون"
+      ],
+      "retrieval_k": 1,
+      "fallback_used": false,
+      "retrieval_hit": true,
+      "answered_in_domain": true,
+      "refused_correctly": null,
+      "generation_time_s": 0.9850411999796052,
+      "answer": "يحق للعامل ترك العمل دون إشعار مع احتفاظه بحقوقه النظامية كلها في الحالات المنصوص عليها في [المادة الحادية والثمانون]."
+    },
+    {
+      "id": 4,
+      "query": "كيف تحسب مكافأة نهاية الخدمة؟",
+      "expected_article": "المادة الرابعة والثمانون",
+      "should_refuse": false,
+      "sources": [
+        "المادة الرابعة والثمانون"
+      ],
+      "retrieval_k": 1,
+      "fallback_used": false,
+      "retrieval_hit": true,
+      "answered_in_domain": true,
+      "refused_correctly": null,
+      "generation_time_s": 1.929900599992834,
+      "answer": "إذا انتهت علاقة العمل وجب على صاحب العمل أن يدفع إلى العامل مكافأة عن مدة خدمته تصب على أساس أجر نصف شهر عن كل سنة من السنوات الخمس الأولى، وأجر شهر عن كل سنة من السنوات التالية، ويتخذ الأجر الأخير أساساً لصاحب المكافأة، ويستحق العامل مكافأة عن أجزاء السنة بنسبة ما قضاه منها في العمل."
+    },
+    {
+      "id": 5,
+      "query": "ما مدة الإشعار لإنهاء عقد غير محدد المدة إذا كان الأجر شهرياً؟",
+      "expected_article": "المادة الخامسة والسبعون",
+      "should_refuse": false,
+      "sources": [
+        "المادة الخامسة والسبعون"
+      ],
+      "retrieval_k": 1,
+      "fallback_used": false,
+      "retrieval_hit": true,
+      "answered_in_domain": true,
+      "refused_correctly": null,
+      "generation_time_s": 1.7710586999892257,
+      "answer": "إذا كان الأجر شهرياً، يجب على العامل أن يوجه إشعاراً كتابياً لصاحب العمل قبل (ثلاثين) يوماً على الأقل من تاريخ الإنهاء. أما إذا كان الإنهاء من صاحب العمل، فيجب عليه أن يوجه إشعاراً كتابياً للعامل قبل (ستين) يوماً على الأقل من تاريخ الإنهاء."
+    },
+    {
+      "id": 6,
+      "query": "كم ساعات العمل في رمضان للمسلمين؟",
+      "expected_article": "المادة الثامنة والتسعون",
+      "should_refuse": false,
+      "sources": [
+        "المادة الثامنة والتسعون"
+      ],
+      "retrieval_k": 1,
+      "fallback_used": false,
+      "retrieval_hit": true,
+      "answered_in_domain": true,
+      "refused_correctly": null,
+      "generation_time_s": 0.7581267000059597,
+      "answer": "ست ساعات في اليوم، أو ست وثلاثين ساعة في الأسبوع."
+    },
+    {
+      "id": 7,
+      "query": "كيف يحسب أجر العمل الإضافي؟",
+      "expected_article": "المادة السابعة بعد المائة",
+      "should_refuse": false,
+      "sources": [
+        "المادة السابعة بعد المائة"
+      ],
+      "retrieval_k": 1,
+      "fallback_used": false,
+      "retrieval_hit": true,
+      "answered_in_domain": true,
+      "refused_correctly": null,
+      "generation_time_s": 0.6929705999791622,
+      "answer": "يوازي أجر الساعة مضافاً إليه (75%) من أجره الأساسي."
+    },
+    {
+      "id": 8,
+      "query": "إذا لم يكن عقد العمل مكتوباً فهل يبقى قائماً؟",
+      "expected_article": "المادة الحادية والخمسون",
+      "should_refuse": false,
+      "sources": [
+        "المادة الحادية والخمسون"
+      ],
+      "retrieval_k": 1,
+      "fallback_used": false,
+      "retrieval_hit": true,
+      "answered_in_domain": true,
+      "refused_correctly": null,
+      "generation_time_s": 0.5580646000162233,
+      "answer": "يعد العقد قائماً ولو كان غير مكتوب."
+    },
+    {
+      "id": 9,
+      "query": "من يتحمل رسوم استقدام العامل غير السعودي ورخصة العمل؟",
+      "expected_article": "المادة الأربعون",
+      "should_refuse": false,
+      "sources": [
+        "المادة الأربعون"
+      ],
+      "retrieval_k": 1,
+      "fallback_used": false,
+      "retrieval_hit": true,
+      "answered_in_domain": true,
+      "refused_correctly": null,
+      "generation_time_s": 1.0074134999886155,
+      "answer": "يتحمل صاحب العمل رسوم استقدام العامل غير السعودي ورسوم الإقامة ورخصة العمل وتجديدهما، وما يترتب على ذلك من غرامات."
+    },
+    {
+      "id": 10,
+      "query": "هل يجوز نقل العامل إلى مكان آخر يغير محل إقامته دون موافقته؟",
+      "expected_article": "المادة الثامنة والخمسون",
+      "should_refuse": false,
+      "sources": [
+        "المادة الثامنة والخمسون",
+        "المادة الثانية والثلاثون",
+        "المادة التاسعة والخمسون"
+      ],
+      "retrieval_k": 3,
+      "fallback_used": true,
+      "retrieval_hit": true,
+      "answered_in_domain": false,
+      "refused_correctly": null,
+      "generation_time_s": 1.4082021999929566,
+      "answer": "لا توجد معلومات كافية في النصوص المسترجعة للإجابة عن هذا السؤال."
+    },
+    {
+      "id": 11,
+      "query": "ما الجزاءات التأديبية التي يمكن توقيعها على العامل؟",
+      "expected_article": "المادة السادسة والستون",
+      "should_refuse": false,
+      "sources": [
+        "المادة السادسة والستون"
+      ],
+      "retrieval_k": 1,
+      "fallback_used": false,
+      "retrieval_hit": true,
+      "answered_in_domain": true,
+      "refused_correctly": null,
+      "generation_time_s": 1.759690300008515,
+      "answer": "الجزاءات التأديبية التي يجوز لصاحب العمل توقيعها على العامل هي: الإنذار، الغرامة، الحرمان من العلاوة أو تأجيلها، تأجيل الترقية، الإيقاف عن العمل مع الحرمان من الأجر، والفصل من العمل في الحالات المقررة في النظام."
+    },
+    {
+      "id": 12,
+      "query": "هل يحق للعامل الحصول على شهادة خدمة بعد انتهاء العقد؟",
+      "expected_article": "المادة الرابعة والستون",
+      "should_refuse": false,
+      "sources": [
+        "المادة الرابعة والستون"
+      ],
+      "retrieval_k": 1,
+      "fallback_used": false,
+      "retrieval_hit": true,
+      "answered_in_domain": true,
+      "refused_correctly": null,
+      "generation_time_s": 0.6992479000182357,
+      "answer": "نعم، يحق للعامل الحصول على شهادة خدمة بعد انتهاء العقد."
+    },
+    {
+      "id": 13,
+      "query": "كم نسبة ضريبة القيمة المضافة في السعودية؟",
+      "expected_article": null,
+      "should_refuse": true,
+      "sources": [
+        "المادة السادسة والعشرون",
+        "المادة الأربعون",
+        "المادة الثالثة والأربعون"
+      ],
+      "retrieval_k": 3,
+      "fallback_used": true,
+      "retrieval_hit": null,
+      "answered_in_domain": null,
+      "refused_correctly": true,
+      "generation_time_s": 1.6482175999844912,
+      "answer": "لا توجد معلومات كافية في النصوص المسترجعة للإجابة عن هذا السؤال."
+    },
+    {
+      "id": 14,
+      "query": "ما عقوبة تجاوز السرعة في الطريق؟",
+      "expected_article": null,
+      "should_refuse": true,
+      "sources": [
+        "المادة السبعون",
+        "المادة الثلاثون بعد المائتين",
+        "المادة السادسة والستون"
+      ],
+      "retrieval_k": 3,
+      "fallback_used": true,
+      "retrieval_hit": null,
+      "answered_in_domain": null,
+      "refused_correctly": true,
+      "generation_time_s": 1.6986175999918487,
+      "answer": "لا توجد معلومات كافية في النصوص المسترجعة للإجابة عن هذا السؤال."
+    },
+    {
+      "id": 15,
+      "query": "ما شروط الحصول على رخصة قيادة؟",
+      "expected_article": null,
+      "should_refuse": true,
+      "sources": [
+        "المادة الثالثة والثلاثون",
+        "المادة الثالثة والسبعون بعد المائة",
+        "المادة الخامسة والستون بعد المائة"
+      ],
+      "retrieval_k": 3,
+      "fallback_used": true,
+      "retrieval_hit": null,
+      "answered_in_domain": null,
+      "refused_correctly": true,
+      "generation_time_s": 1.6878247999993619,
+      "answer": "لا توجد معلومات كافية في النصوص المسترجعة للإجابة عن هذا السؤال."
+    }
+  ]
+}

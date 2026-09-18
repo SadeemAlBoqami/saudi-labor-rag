@@ -1,0 +1,334 @@
+{
+  "summary": {
+    "total_questions": 18,
+    "status_accuracy": 0.9444444444444444,
+    "retrieval_accuracy": 1.0,
+    "answer_accuracy": 1.0,
+    "clarification_accuracy": 0.6666666666666666,
+    "out_of_scope_accuracy": 1.0,
+    "avg_latency_s": 1.6915844500019577,
+    "embedding_model": "BAAI/bge-m3",
+    "generator": "Gemma 3 4B Q4_K_M",
+    "retrieval_top_k": 1
+  },
+  "results": [
+    {
+      "id": 1,
+      "query": "كم مدة فترة التجربة؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثالثة والخمسون",
+      "sources": [
+        "المادة الثالثة والخمسون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": true,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": null,
+      "answer": "ألا يزيد مجموع المدة في جميع الأحوال على (مائة وثمانين) يوماً.",
+      "clarifying_question": "",
+      "latency_s": 1.6820027999929152
+    },
+    {
+      "id": 2,
+      "query": "متى يجوز لصاحب العمل فصل العامل دون مكافأة أو إشعار؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثمانون",
+      "sources": [
+        "المادة الثمانون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": true,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": null,
+      "answer": "يجوز لصاحب العمل فصل العامل دون مكافأة أو إشعار في الحالات المنصوص عليها في المادة الثمانون من نظام العمل، وتشمل هذه الحالات: الاعتداء على صاحب العمل أو رؤوسه، عدم أداء الالتزامات الجوهرية، السلوك السيئ، إلحاق خسارة مادية، التزوير للحصول على العمل، التعيين تحت الاختبار، الغياب المتكرر، أو استغلال المركز الوظيفي بطريقة غير مشروعة، أو إفشاء الأسرار الصناعية أو التجارية.",
+      "clarifying_question": "",
+      "latency_s": 2.6980345000047237
+    },
+    {
+      "id": 3,
+      "query": "متى يحق للعامل ترك العمل دون إشعار مع الاحتفاظ بحقوقه؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الحادية والثمانون",
+      "sources": [
+        "المادة الحادية والثمانون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": true,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": null,
+      "answer": "يحق للعامل ترك العمل دون إشعار مع احتفاظه بحقوقه النظامية كلها في الحالات التالية: عدم الوفاء بالتزامات صاحب العمل العقدية أو النظامية الجوهرية، إدخال الغش وقت التعاقد، تكليف العامل بعمل يختلف جوهرياً عن المتفق عليه، وقوع اعتداء أو سلوك مخل بالآداب أو قسوة وجور أو إهانة من صاحب العمل أو من يمثله، وجود خطر جسيم يهدد سلامة العامل أو صحته ولم يتخذ صاحب العمل الإجراءات اللازمة لإزالته، أو دفع العامل بتصرفاته الجائرة إلى أن يكون العامل هو الذي أنهى العقد.",
+      "clarifying_question": "",
+      "latency_s": 3.017354499985231
+    },
+    {
+      "id": 4,
+      "query": "كيف تحسب مكافأة نهاية الخدمة؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الرابعة والثمانون",
+      "sources": [
+        "المادة الرابعة والثمانون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": true,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": null,
+      "answer": "يجب على صاحب العمل أن يدفع إلى العامل مكافأة عن مدة خدمته تصب على أساس أجر نصف شهر عن كل سنة من السنوات الخمس الأولى، وأجر شهر عن كل سنة من السنوات التالية. ويستحق العامل مكافأة عن أجزاء السنة بنسبة ما قضاه منها في العمل.",
+      "clarifying_question": "",
+      "latency_s": 1.5885231000138447
+    },
+    {
+      "id": 5,
+      "query": "ما مدة الإشعار لإنهاء عقد غير محدد المدة إذا كان الأجر شهرياً؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الخامسة والسبعون",
+      "sources": [
+        "المادة الخامسة والسبعون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": true,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": null,
+      "answer": "إذا كان العقد غير محدد المدة وكان الأجر شهرياً، فيجب على العامل أن يوجه إشعاراً كتابياً لصاحب العمل قبل (ثلاثين) يوماً على الأقل من تاريخ الإنهاء.",
+      "clarifying_question": "",
+      "latency_s": 1.5176710999803618
+    },
+    {
+      "id": 6,
+      "query": "كم ساعات العمل في رمضان للمسلمين؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثامنة والتسعون",
+      "sources": [
+        "المادة الثامنة والتسعون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": true,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": null,
+      "answer": "لا يجوز تشغيل العامل تشغيلاً فعلياً أكثر من ثماني ساعات في اليوم الواحد، أو أكثر من ثمان وأربعين ساعة في الأسبوع، إذا اعتمد صاحب العمل المعيار اليومي، أو المعيار الأسبوعي. وتخفض ساعات العمل الفعلية خلال شهر رمضان للمسلمين، بحيث لا تزيد على ست ساعات في اليوم، أو ست وثلاثين ساعة في الأسبوع.",
+      "clarifying_question": "",
+      "latency_s": 2.0049552000127733
+    },
+    {
+      "id": 7,
+      "query": "كيف يحسب أجر العمل الإضافي؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة السابعة بعد المائة",
+      "sources": [
+        "المادة السابعة بعد المائة"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": true,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": null,
+      "answer": "يجب على صاحب العمل أن يدفع للعامل أجراً إضافياً يوازي أجر الساعة مضافاً إليه (75%) من أجره الأساسي. ويجوز لصاحب العمل بموافقة العامل أن يحتسب للعامل أيام إجازة تعويضية مدفوعة الأجر بدلاً عن الأجر المستحق للعامل لساعات العمل الإضافية.",
+      "clarifying_question": "",
+      "latency_s": 1.8535856000089552
+    },
+    {
+      "id": 8,
+      "query": "إذا لم يكن عقد العمل مكتوباً فهل يبقى قائماً؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الحادية والخمسون",
+      "sources": [
+        "المادة الحادية والخمسون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": true,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": null,
+      "answer": "يبقى العقد قائماً ولو كان غير مكتوب. يجوز للعامل وحده إثبات العقد وحقوقه التي نشأت عنه بجميع طرق الإثبات.",
+      "clarifying_question": "",
+      "latency_s": 1.2622580000024755
+    },
+    {
+      "id": 9,
+      "query": "من يتحمل رسوم استقدام العامل غير السعودي ورخصة العمل؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الأربعون",
+      "sources": [
+        "المادة الأربعون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": true,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": null,
+      "answer": "يتحمل صاحب العمل رسوم استقدام العامل غير السعودي ورخصة العمل وتجديدها، وما يترتب على ذلك من غرامات يتسبب بها صاحب العمل، ورسوم تغيير المهنة، والخروج والعودة، وتذكرة عودة العامل إلى موطنه بعد انتهاء العلاقة بين الطرفين.",
+      "clarifying_question": "",
+      "latency_s": 1.7470460000040475
+    },
+    {
+      "id": 10,
+      "query": "هل يجوز نقل العامل إلى مكان آخر يغير محل إقامته دون موافقته؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثامنة والخمسون",
+      "sources": [
+        "المادة الثامنة والخمسون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": true,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": null,
+      "answer": "لا يجوز لصاحب العمل أن ينقل العامل بغير موافقته - كتابةً - من مكان عمله الأصلي إلى مكان آخر يقتضي تغيير محل إقامته.",
+      "clarifying_question": "",
+      "latency_s": 1.313242399977753
+    },
+    {
+      "id": 11,
+      "query": "ما الجزاءات التأديبية التي يمكن توقيعها على العامل؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة السادسة والستون",
+      "sources": [
+        "المادة السادسة والستون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": true,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": null,
+      "answer": "الجزاءات التأديبية التي يجوز لصاحب العمل توقيعها على العامل هي: الإنذار، الغرامة، الحرمان من العلاوة أو تأجيلها لمدة لا تزيد على سنة متى كانت مقررة من صاحب العمل، تأجيل الترقية مدة لا تزيد على سنة متى كانت مقررة من صاحب العمل، الإيقاف عن العمل مع الحرمان من الأجر، والفصل من العمل في الحالات المقررة في النظام.",
+      "clarifying_question": "",
+      "latency_s": 2.1860779999988154
+    },
+    {
+      "id": 12,
+      "query": "هل يحق للعامل الحصول على شهادة خدمة بعد انتهاء العقد؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الرابعة والستون",
+      "sources": [
+        "المادة الرابعة والستون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": true,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": null,
+      "answer": "نعم، يحق للعامل الحصول على شهادة خدمة بعد انتهاء العقد بناءً على طلبه، وذلك وفقاً للمادة الرابعة والستون من نظام العمل السعودي.",
+      "clarifying_question": "",
+      "latency_s": 1.2649951000057627
+    },
+    {
+      "id": 13,
+      "query": "هل أستحق مكافأة نهاية الخدمة؟",
+      "expected_status": "clarify",
+      "actual_status": "clarify",
+      "status_correct": true,
+      "expected_article": "المادة الخامسة والثمانون",
+      "sources": [
+        "المادة الخامسة والثمانون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": null,
+      "clarify_behavior_correct": true,
+      "out_of_scope_behavior_correct": null,
+      "answer": "",
+      "clarifying_question": "كم مدة خدمتك في الشركة؟",
+      "latency_s": 0.8822443000099156
+    },
+    {
+      "id": 14,
+      "query": "هل يحق لي ترك العمل دون إشعار؟",
+      "expected_status": "clarify",
+      "actual_status": "answer",
+      "status_correct": false,
+      "expected_article": "المادة الحادية والثمانون",
+      "sources": [
+        "المادة الحادية والثمانون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": null,
+      "clarify_behavior_correct": false,
+      "out_of_scope_behavior_correct": null,
+      "answer": "يحق لك ترك العمل دون إشعار إذا كان صاحب العمل قد أخل بالتزاماته العقدية أو النظامية الجوهرية إزاءك، أو إذا ثبت أن صاحب العمل أو من يمثله قد أدخل عليك الغش وقت التعاقد، أو إذا كلفك صاحب العمل دون رضاك بعمل يختلف جوهرياً عن العمل المتفق عليه، أو إذا وقعت عليك أو على أسرتك اعتداءً يتسم بالعنف أو سلوكاً مخللاً بالآداب، أو إذا اتسمت معاملة صاحب العمل أو المدير المسؤول بمظاهر من القسوة والجور أو الإهانة، أو إذا كان في مقر العمل خطر جسيم يهدد سلامتك أو صحتك ولم يتخذ صاحب العمل الإجراءات اللازمة لإزالته، أو إذا دفعك صاحب العمل أو من يمثله إلى إنهاء العقد بتصرفاته الجائرة.",
+      "clarifying_question": "",
+      "latency_s": 3.632112000021152
+    },
+    {
+      "id": 15,
+      "query": "هل يستطيع صاحب العمل فصلي دون مكافأة أو إشعار؟",
+      "expected_status": "clarify",
+      "actual_status": "clarify",
+      "status_correct": true,
+      "expected_article": "المادة الثمانون",
+      "sources": [
+        "المادة الثمانون"
+      ],
+      "retrieval_hit": true,
+      "answer_behavior_correct": null,
+      "clarify_behavior_correct": true,
+      "out_of_scope_behavior_correct": null,
+      "answer": "",
+      "clarifying_question": "ما هي طبيعة التزام العامل الذي لم يؤديه، أو ما هي الأوامر المشروعة التي لم يطعها؟",
+      "latency_s": 1.2968425000144634
+    },
+    {
+      "id": 16,
+      "query": "كم نسبة ضريبة القيمة المضافة في السعودية؟",
+      "expected_status": "out_of_scope",
+      "actual_status": "out_of_scope",
+      "status_correct": true,
+      "expected_article": null,
+      "sources": [],
+      "retrieval_hit": null,
+      "answer_behavior_correct": null,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": true,
+      "answer": "لا توجد معلومات في نظام العمل المسترجع تسمح بالإجابة عن هذا السؤال.",
+      "clarifying_question": "",
+      "latency_s": 0.834476399992127
+    },
+    {
+      "id": 17,
+      "query": "ما عقوبة تجاوز السرعة في الطريق؟",
+      "expected_status": "out_of_scope",
+      "actual_status": "out_of_scope",
+      "status_correct": true,
+      "expected_article": null,
+      "sources": [],
+      "retrieval_hit": null,
+      "answer_behavior_correct": null,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": true,
+      "answer": "لا توجد معلومات في نظام العمل المسترجع تسمح بالإجابة عن هذا السؤال.",
+      "clarifying_question": "",
+      "latency_s": 0.8572199000045657
+    },
+    {
+      "id": 18,
+      "query": "ما شروط الحصول على رخصة قيادة؟",
+      "expected_status": "out_of_scope",
+      "actual_status": "out_of_scope",
+      "status_correct": true,
+      "expected_article": null,
+      "sources": [],
+      "retrieval_hit": null,
+      "answer_behavior_correct": null,
+      "clarify_behavior_correct": null,
+      "out_of_scope_behavior_correct": true,
+      "answer": "لا توجد معلومات في نظام العمل المسترجع تسمح بالإجابة عن هذا السؤال.",
+      "clarifying_question": "",
+      "latency_s": 0.8098787000053562
+    }
+  ]
+}
