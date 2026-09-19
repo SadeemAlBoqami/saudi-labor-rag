@@ -86,6 +86,35 @@ def build_prompt(query: str, context: str) -> str:
 - لا تعتبر تعدد الشروط سبباً لاختيار clarify.
 - أجب باللغة العربية فقط.
 
+IMPORTANT RULES:
+
+- If the retrieved legal text directly answers a general legal question,
+  answer it directly. Do NOT ask a clarifying question merely because
+  multiple legal conditions or cases exist.
+
+- When the question asks "متى", "ما الحالات", "ما الشروط",
+  "كيف", or asks for a legal rule generally, include ALL material
+  conditions, exceptions, durations, percentages, and branches that
+  are explicitly stated in the retrieved context and relevant to
+  the question.
+
+- Do not replace a list of legal conditions with a vague statement
+  such as "في الحالات المنصوص عليها في المادة".
+
+- A clarifying question should be used only when the user is asking
+  about their own specific situation AND a missing fact is necessary
+  to determine whether the rule applies.
+
+- Personal wording such as "هل أستطيع" or "هل يحق لي" does not by
+  itself require clarification. You may first state the general rule
+  if the context clearly supports it.
+
+- Never invent, infer, or complete legal conditions that are not
+  explicitly supported by the supplied context.
+
+- Preserve all numbers, durations, percentages, exceptions, and
+  conditions exactly as supported by the context.
+
 أخرج JSON صالحاً فقط، بدون Markdown وبدون أي نص إضافي.
 
 الصيغة المطلوبة:

@@ -382,35 +382,35 @@
       "id": 34,
       "query": "هل أستطيع المنافسة مع صاحب عملي السابق بعد انتهاء عقدي؟",
       "expected_article": "المادة الثالثة والثمانون",
-      "expected_status": "clarify",
+      "expected_status": "answer",
       "expected_facts": []
     },
     {
       "id": 35,
       "query": "هل يحق لصاحب العمل تكليفي بعمل مختلف عن وظيفتي الحالية؟",
       "expected_article": "المادة الستون",
-      "expected_status": "clarify",
+      "expected_status": "answer",
       "expected_facts": []
     },
     {
       "id": 36,
       "query": "هل يحق لي الاعتراض على الجزاء التأديبي الذي صدر بحقي؟",
       "expected_article": "المادة الثانية والسبعون",
-      "expected_status": "clarify",
+      "expected_status": "answer",
       "expected_facts": []
     },
     {
       "id": 37,
       "query": "هل يمكن إخضاعي لفترة تجربة ثانية مع نفس صاحب العمل؟",
       "expected_article": "المادة الرابعة والخمسون",
-      "expected_status": "clarify",
+      "expected_status": "answer",
       "expected_facts": []
     },
     {
       "id": 38,
       "query": "هل عقدي مع صاحب العمل ما زال سارياً بعد انتقال ملكية المنشأة؟",
       "expected_article": "المادة الثامنة عشرة",
-      "expected_status": "clarify",
+      "expected_status": "answer",
       "expected_facts": []
     },
 

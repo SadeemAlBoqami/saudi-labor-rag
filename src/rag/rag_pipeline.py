@@ -39,7 +39,7 @@ HARD_REJECT_SCORE = 0.05
 
 # من 0.05 إلى أقل من 0.15:
 # Gray zone
-# لا نسمح فيها بإجابة قانونية مباشرة.
+# لا نسمح فيها بأي إجابة قانونية مباشرة.
 GRAY_ZONE_MAX_SCORE = 0.15
 
 # من 0.15 فأعلى:
@@ -125,7 +125,7 @@ class LaborLawRAG:
 
         text = text.strip()
 
-        # Direct JSON
+        # Direct JSON parse
         try:
             return json.loads(text)
 
@@ -155,9 +155,7 @@ class LaborLawRAG:
     # ========================================================
 
     @staticmethod
-    def _score_zone(
-        best_score: float,
-    ):
+    def _score_zone(best_score: float):
         """
         Classify reranker score into one of:
 
@@ -188,54 +186,40 @@ class LaborLawRAG:
         for item in reranked_results:
             candidate_debug.append(
                 {
-                    "article_heading":
-                        item.get(
-                            "article_heading",
-                            "",
-                        ),
-
-                    "dense_score":
-                        item.get(
-                            "dense_score",
-                            None,
-                        ),
-
-                    "reranker_score":
-                        item.get(
-                            "reranker_score",
-                            None,
-                        ),
-
-                    "reranker_confidence":
-                        item.get(
-                            "reranker_confidence",
-                            None,
-                        ),
-
-                    "dense_rank":
-                        item.get(
-                            "rank",
-                            None,
-                        ),
-
-                    "rerank_rank":
-                        item.get(
-                            "rerank_rank",
-                            None,
-                        ),
+                    "article_heading": item.get(
+                        "article_heading",
+                        "",
+                    ),
+                    "dense_score": item.get(
+                        "dense_score",
+                        None,
+                    ),
+                    "reranker_score": item.get(
+                        "reranker_score",
+                        None,
+                    ),
+                    "reranker_confidence": item.get(
+                        "reranker_confidence",
+                        None,
+                    ),
+                    "dense_rank": item.get(
+                        "rank",
+                        None,
+                    ),
+                    "rerank_rank": item.get(
+                        "rerank_rank",
+                        None,
+                    ),
                 }
             )
 
         return {
-            "retrieval_k":
-                len(dense_candidates),
-
-            "retrieval_candidates":
-                candidate_debug,
+            "retrieval_k": len(dense_candidates),
+            "retrieval_candidates": candidate_debug,
         }
 
     # ========================================================
-    # Common response builder
+    # Diagnostic fields
     # ========================================================
 
     @staticmethod
@@ -295,20 +279,11 @@ class LaborLawRAG:
             )
 
         return {
-            "retrieval_score":
-                best_dense_score,
-
-            "reranker_score":
-                best_reranker_score,
-
-            "reranker_confidence":
-                best_reranker_confidence,
-
-            "reranker_margin":
-                reranker_margin,
-
-            "score_zone":
-                score_zone,
+            "retrieval_score": best_dense_score,
+            "reranker_score": best_reranker_score,
+            "reranker_confidence": best_reranker_confidence,
+            "reranker_margin": reranker_margin,
+            "score_zone": score_zone,
         }
 
     # ========================================================
@@ -355,44 +330,19 @@ class LaborLawRAG:
 
         if not dense_candidates:
             return {
-                "status":
-                    "out_of_scope",
-
-                "answer":
-                    OUT_OF_SCOPE_MESSAGE,
-
-                "clarifying_question":
-                    "",
-
-                "sources":
-                    [],
-
-                "retrieval_k":
-                    0,
-
-                "retrieval_score":
-                    0.0,
-
-                "reranker_score":
-                    0.0,
-
-                "reranker_confidence":
-                    0.0,
-
-                "reranker_margin":
-                    None,
-
-                "score_zone":
-                    "reject",
-
-                "retrieval_candidates":
-                    [],
-
-                "abstained":
-                    True,
-
-                "abstention_reason":
-                    "no_retrieval_candidates",
+                "status": "out_of_scope",
+                "answer": OUT_OF_SCOPE_MESSAGE,
+                "clarifying_question": "",
+                "sources": [],
+                "retrieval_k": 0,
+                "retrieval_score": 0.0,
+                "reranker_score": 0.0,
+                "reranker_confidence": 0.0,
+                "reranker_margin": None,
+                "score_zone": "reject",
+                "retrieval_candidates": [],
+                "abstained": True,
+                "abstention_reason": "no_retrieval_candidates",
             }
 
         # ====================================================
@@ -415,39 +365,17 @@ class LaborLawRAG:
 
         if not reranked_results:
             return {
-                "status":
-                    "out_of_scope",
-
-                "answer":
-                    LOW_CONFIDENCE_MESSAGE,
-
-                "clarifying_question":
-                    "",
-
-                "sources":
-                    [],
-
-                "retrieval_score":
-                    0.0,
-
-                "reranker_score":
-                    0.0,
-
-                "reranker_confidence":
-                    0.0,
-
-                "reranker_margin":
-                    None,
-
-                "score_zone":
-                    "reject",
-
-                "abstained":
-                    True,
-
-                "abstention_reason":
-                    "no_reranked_candidates",
-
+                "status": "out_of_scope",
+                "answer": LOW_CONFIDENCE_MESSAGE,
+                "clarifying_question": "",
+                "sources": [],
+                "retrieval_score": 0.0,
+                "reranker_score": 0.0,
+                "reranker_confidence": 0.0,
+                "reranker_margin": None,
+                "score_zone": "reject",
+                "abstained": True,
+                "abstention_reason": "no_reranked_candidates",
                 **debug_fields,
             }
 
@@ -486,24 +414,12 @@ class LaborLawRAG:
 
         if score_zone == "reject":
             return {
-                "status":
-                    "out_of_scope",
-
-                "answer":
-                    LOW_CONFIDENCE_MESSAGE,
-
-                "clarifying_question":
-                    "",
-
-                "sources":
-                    [],
-
-                "abstained":
-                    True,
-
-                "abstention_reason":
-                    "reranker_score_too_low",
-
+                "status": "out_of_scope",
+                "answer": LOW_CONFIDENCE_MESSAGE,
+                "clarifying_question": "",
+                "sources": [],
+                "abstained": True,
+                "abstention_reason": "reranker_score_too_low",
                 **diagnostics,
                 **debug_fields,
             }
@@ -512,9 +428,7 @@ class LaborLawRAG:
         # 5. Select ONE best article only
         # ====================================================
 
-        selected_result = (
-            best_candidate
-        )
+        selected_result = best_candidate
 
         selected_results = [
             selected_result
@@ -562,18 +476,9 @@ class LaborLawRAG:
         )
 
         print()
-        print(
-            "--- RAW MODEL OUTPUT ---"
-        )
-
-        print(
-            raw_output
-        )
-
-        print(
-            "--- END RAW OUTPUT ---"
-        )
-
+        print("--- RAW MODEL OUTPUT ---")
+        print(raw_output)
+        print("--- END RAW OUTPUT ---")
         print()
 
         # ====================================================
@@ -588,24 +493,12 @@ class LaborLawRAG:
 
         if not parsed:
             return {
-                "status":
-                    "error",
-
-                "answer":
-                    "",
-
-                "clarifying_question":
-                    "",
-
-                "sources":
-                    sources,
-
-                "abstained":
-                    True,
-
-                "abstention_reason":
-                    "json_parse_failure",
-
+                "status": "error",
+                "answer": "",
+                "clarifying_question": "",
+                "sources": sources,
+                "abstained": True,
+                "abstention_reason": "json_parse_failure",
                 **diagnostics,
                 **debug_fields,
             }
@@ -645,24 +538,12 @@ class LaborLawRAG:
 
         if status not in valid_statuses:
             return {
-                "status":
-                    "error",
-
-                "answer":
-                    "",
-
-                "clarifying_question":
-                    "",
-
-                "sources":
-                    sources,
-
-                "abstained":
-                    True,
-
-                "abstention_reason":
-                    "invalid_model_status",
-
+                "status": "error",
+                "answer": "",
+                "clarifying_question": "",
+                "sources": sources,
+                "abstained": True,
+                "abstention_reason": "invalid_model_status",
                 **diagnostics,
                 **debug_fields,
             }
@@ -672,110 +553,13 @@ class LaborLawRAG:
         # ====================================================
 
         if score_zone == "gray":
-
-            # -----------------------------------------
-            # Direct legal answer is NOT allowed
-            # -----------------------------------------
-
-            if status == "answer":
-                return {
-                    "status":
-                        "out_of_scope",
-
-                    "answer":
-                        LOW_CONFIDENCE_MESSAGE,
-
-                    "clarifying_question":
-                        "",
-
-                    "sources":
-                        [],
-
-                    "abstained":
-                        True,
-
-                    "abstention_reason":
-                        "gray_zone_answer_blocked",
-
-                    **diagnostics,
-                    **debug_fields,
-                }
-
-            # -----------------------------------------
-            # Clarification is allowed
-            # -----------------------------------------
-
-            if status == "clarify":
-                if not clarifying_question:
-                    return {
-                        "status":
-                            "out_of_scope",
-
-                        "answer":
-                            LOW_CONFIDENCE_MESSAGE,
-
-                        "clarifying_question":
-                            "",
-
-                        "sources":
-                            [],
-
-                        "abstained":
-                            True,
-
-                        "abstention_reason":
-                            "gray_zone_empty_clarification",
-
-                        **diagnostics,
-                        **debug_fields,
-                    }
-
-                return {
-                    "status":
-                        "clarify",
-
-                    "answer":
-                        "",
-
-                    "clarifying_question":
-                        clarifying_question,
-
-                    "sources":
-                        sources,
-
-                    "abstained":
-                        False,
-
-                    "abstention_reason":
-                        None,
-
-                    **diagnostics,
-                    **debug_fields,
-                }
-
-            # -----------------------------------------
-            # Model says OOD
-            # -----------------------------------------
-
             return {
-                "status":
-                    "out_of_scope",
-
-                "answer":
-                    OUT_OF_SCOPE_MESSAGE,
-
-                "clarifying_question":
-                    "",
-
-                "sources":
-                    [],
-
-                "abstained":
-                    True,
-
-                "abstention_reason":
-                    "gray_zone_model_out_of_scope",
-
+                "status": "out_of_scope",
+                "answer": LOW_CONFIDENCE_MESSAGE,
+                "clarifying_question": "",
+                "sources": [],
+                "abstained": True,
+                "abstention_reason": "gray_zone_abstention",
                 **diagnostics,
                 **debug_fields,
             }
@@ -791,47 +575,23 @@ class LaborLawRAG:
         if status == "answer":
             if not answer:
                 return {
-                    "status":
-                        "out_of_scope",
-
-                    "answer":
-                        LOW_CONFIDENCE_MESSAGE,
-
-                    "clarifying_question":
-                        "",
-
-                    "sources":
-                        [],
-
-                    "abstained":
-                        True,
-
-                    "abstention_reason":
-                        "empty_model_answer",
-
+                    "status": "out_of_scope",
+                    "answer": LOW_CONFIDENCE_MESSAGE,
+                    "clarifying_question": "",
+                    "sources": [],
+                    "abstained": True,
+                    "abstention_reason": "empty_model_answer",
                     **diagnostics,
                     **debug_fields,
                 }
 
             return {
-                "status":
-                    "answer",
-
-                "answer":
-                    answer,
-
-                "clarifying_question":
-                    "",
-
-                "sources":
-                    sources,
-
-                "abstained":
-                    False,
-
-                "abstention_reason":
-                    None,
-
+                "status": "answer",
+                "answer": answer,
+                "clarifying_question": "",
+                "sources": sources,
+                "abstained": False,
+                "abstention_reason": None,
                 **diagnostics,
                 **debug_fields,
             }
@@ -843,47 +603,23 @@ class LaborLawRAG:
         if status == "clarify":
             if not clarifying_question:
                 return {
-                    "status":
-                        "out_of_scope",
-
-                    "answer":
-                        LOW_CONFIDENCE_MESSAGE,
-
-                    "clarifying_question":
-                        "",
-
-                    "sources":
-                        [],
-
-                    "abstained":
-                        True,
-
-                    "abstention_reason":
-                        "empty_clarification",
-
+                    "status": "out_of_scope",
+                    "answer": LOW_CONFIDENCE_MESSAGE,
+                    "clarifying_question": "",
+                    "sources": [],
+                    "abstained": True,
+                    "abstention_reason": "empty_clarification",
                     **diagnostics,
                     **debug_fields,
                 }
 
             return {
-                "status":
-                    "clarify",
-
-                "answer":
-                    "",
-
-                "clarifying_question":
-                    clarifying_question,
-
-                "sources":
-                    sources,
-
-                "abstained":
-                    False,
-
-                "abstention_reason":
-                    None,
-
+                "status": "clarify",
+                "answer": "",
+                "clarifying_question": clarifying_question,
+                "sources": sources,
+                "abstained": False,
+                "abstention_reason": None,
                 **diagnostics,
                 **debug_fields,
             }
@@ -893,24 +629,12 @@ class LaborLawRAG:
         # ---------------------------------------------
 
         return {
-            "status":
-                "out_of_scope",
-
-            "answer":
-                OUT_OF_SCOPE_MESSAGE,
-
-            "clarifying_question":
-                "",
-
-            "sources":
-                [],
-
-            "abstained":
-                True,
-
-            "abstention_reason":
-                "model_out_of_scope",
-
+            "status": "out_of_scope",
+            "answer": OUT_OF_SCOPE_MESSAGE,
+            "clarifying_question": "",
+            "sources": [],
+            "abstained": True,
+            "abstention_reason": "model_out_of_scope",
             **diagnostics,
             **debug_fields,
         }
