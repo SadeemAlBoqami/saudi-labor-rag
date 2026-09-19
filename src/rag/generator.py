@@ -1,7 +1,11 @@
+import os
 import requests
 
 
-API_URL = "http://127.0.0.1:8080/v1/chat/completions"
+BASE_URL = os.getenv(
+    "LLM_BASE_URL",
+    "http://127.0.0.1:8081"
+)
 
 
 class QwenGenerator:
@@ -27,9 +31,9 @@ class QwenGenerator:
         }
 
         response = requests.post(
-            API_URL,
+            f"{BASE_URL}/v1/chat/completions",
             json=payload,
-            timeout=300,
+            timeout=120,
         )
 
         response.raise_for_status()

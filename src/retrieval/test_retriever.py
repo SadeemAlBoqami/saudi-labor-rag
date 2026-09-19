@@ -1,5 +1,4 @@
-from retriever import LaborLawRetriever
-
+from src.retrieval.retriever import LaborLawRetriever
 
 retriever = LaborLawRetriever()
 

@@ -1,0 +1,3825 @@
+{
+  "summary": {
+    "total_questions": 45,
+    "status_accuracy": 0.9333333333333333,
+    "retrieval_accuracy": 0.9736842105263158,
+    "answer_behavior_accuracy": 0.9714285714285714,
+    "clarification_accuracy": 0.3333333333333333,
+    "out_of_scope_accuracy": 1.0,
+    "avg_factual_coverage": 0.9211111111111111,
+    "fully_factual_answer_rate": 0.8,
+    "avg_latency_s": 1.0144834156406837,
+    "abstention_count": 8,
+    "abstention_rate": 0.17777777777777778,
+    "correct_abstention_count": 7,
+    "wrong_abstention_count": 1,
+    "answered_with_wrong_article_count": 0,
+    "avg_in_scope_reranker_score": 0.8943052349710151,
+    "min_in_scope_reranker_score": 0.0624854676425457,
+    "avg_out_of_scope_reranker_score": 0.05178027136051761,
+    "max_out_of_scope_reranker_score": 0.12036783993244171,
+    "avg_in_scope_reranker_margin": 0.4485905137109129,
+    "min_in_scope_reranker_margin": 0.00605696439743042,
+    "avg_out_of_scope_reranker_margin": 0.039355734745705764,
+    "max_out_of_scope_reranker_margin": 0.11834243242628872,
+    "embedding_model": "BAAI/bge-m3",
+    "reranker_model": "BAAI/bge-reranker-v2-m3",
+    "generator": "Gemma 3 4B Q4_K_M",
+    "retrieval_top_k": 3,
+    "selected_context_articles": 1
+  },
+  "results": [
+    {
+      "id": 1,
+      "query": "كم مدة فترة التجربة؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثالثة والخمسون",
+      "sources": [
+        "المادة الثالثة والخمسون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6516215801239014,
+      "reranker_score": 0.7856354117393494,
+      "reranker_confidence": 0.6868934014170313,
+      "reranker_margin": 0.023255348205566406,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثالثة والخمسون",
+          "dense_score": 0.6516215801239014,
+          "reranker_score": 0.7856354117393494,
+          "reranker_confidence": 0.6868934014170313,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الرابعة والخمسون",
+          "dense_score": 0.5921028852462769,
+          "reranker_score": 0.762380063533783,
+          "reranker_confidence": 0.6818702481535298,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الخامسة والثمانون",
+          "dense_score": 0.4721772372722626,
+          "reranker_score": 0.0017569537740200758,
+          "reranker_confidence": 0.5004392383305151,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "مائة وثمانين",
+          "180"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "مائة وثمانين",
+            "180"
+          ],
+          "matched": true,
+          "matched_value": "مائة وثمانين"
+        }
+      ],
+      "answer": "ألا يزيد مجموع المدة في جميع الأحوال على (مائة وثمانين) يوماً.",
+      "clarifying_question": "",
+      "latency_s": 1.1611673729494214
+    },
+    {
+      "id": 2,
+      "query": "متى يجوز لصاحب العمل فصل العامل دون مكافأة أو إشعار؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثمانون",
+      "sources": [
+        "المادة الثمانون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.705612063407898,
+      "reranker_score": 0.9981546998023987,
+      "reranker_confidence": 0.7306956159364487,
+      "reranker_margin": 0.031135857105255127,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثمانون",
+          "dense_score": 0.705612063407898,
+          "reranker_score": 0.9981546998023987,
+          "reranker_confidence": 0.7306956159364487,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الحادية والثمانون",
+          "dense_score": 0.6604065895080566,
+          "reranker_score": 0.9670188426971436,
+          "reranker_confidence": 0.724524891293965,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الخامسة والخمسون بعد المائة",
+          "dense_score": 0.6320903897285461,
+          "reranker_score": 0.905815601348877,
+          "reranker_confidence": 0.7121431427697876,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "الاعتداء"
+        ],
+        [
+          "الالتزامات الجوهرية"
+        ],
+        [
+          "خسارة مادية"
+        ],
+        [
+          "التزوير"
+        ],
+        [
+          "الغياب"
+        ],
+        [
+          "إفشاء الأسرار"
+        ]
+      ],
+      "factual_coverage": 0.3333333333333333,
+      "fully_factual": false,
+      "fact_results": [
+        {
+          "alternatives": [
+            "الاعتداء"
+          ],
+          "matched": false,
+          "matched_value": null
+        },
+        {
+          "alternatives": [
+            "الالتزامات الجوهرية"
+          ],
+          "matched": false,
+          "matched_value": null
+        },
+        {
+          "alternatives": [
+            "خسارة مادية"
+          ],
+          "matched": true,
+          "matched_value": "خسارة مادية"
+        },
+        {
+          "alternatives": [
+            "التزوير"
+          ],
+          "matched": true,
+          "matched_value": "التزوير"
+        },
+        {
+          "alternatives": [
+            "الغياب"
+          ],
+          "matched": false,
+          "matched_value": null
+        },
+        {
+          "alternatives": [
+            "إفشاء الأسرار"
+          ],
+          "matched": false,
+          "matched_value": null
+        }
+      ],
+      "answer": "يجوز لصاحب العمل فصل العامل دون مكافأة أو إشعار في الحالات المنصوص عليها في المادة الثمانون من نظام العمل، وتشمل هذه الحالات:\n1. إذا وقع من العامل اعتداء على صاحب العمل أو المدير المسؤول أو أحد رؤسائه أو مرؤوسيه أثناء العمل أو بسببه.\n2. إذا لم يؤد العامل التزاماته الجوهرية المترتبة على عقد العمل أو لم يطع الأوامر المشروعة أو لم يراع عمداً التابعيات - التي أعلن عنها صاحب العمل في مكان ظاهر - الخاصة بسلامة العمل والعمال رغم إنذاره كتابة.\n3. إذا ثبت اتباع العامل سلوكاً سيئاً، أو ارتكابه عملاً مخلاً بالشرف أو الأمانة.\n4. إذا وقع من العامل - عمداً - أي فعل أو تقصير يقصد به إلحاق خسارة مادية بصاحب العمل، بشرط أن يبلغ صاحب العمل الجهات المختصة بالحادث خلال أربع وعشرين ساعة من وقت علمه بوقوعه.\n5. إذا ثبت أن العامل لجأ إلى التزوير ليحصل على العمل.\n6. إذا كان العامل معيناً تحت الاختبار.\n7. إذا تغيب العامل دون سبب مشروع أكثر من ثلاثين يوماً خلال السنة العقدية الواحدة أو أكثر من خمسة عشر يوماً متتالية، مع سبق الإذن الكتابي من صاحب العمل.",
+      "clarifying_question": "",
+      "latency_s": 2.468676919816062
+    },
+    {
+      "id": 3,
+      "query": "متى يحق للعامل ترك العمل دون إشعار مع الاحتفاظ بحقوقه؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الحادية والثمانون",
+      "sources": [
+        "المادة الحادية والثمانون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7530217170715332,
+      "reranker_score": 0.9994157552719116,
+      "reranker_confidence": 0.7309436936389259,
+      "reranker_margin": 0.15278565883636475,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الحادية والثمانون",
+          "dense_score": 0.7530217170715332,
+          "reranker_score": 0.9994157552719116,
+          "reranker_confidence": 0.7309436936389259,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثامنة والسبعون",
+          "dense_score": 0.6538082361221313,
+          "reranker_score": 0.8466300964355469,
+          "reranker_confidence": 0.6998597508446976,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة السادسة عشرة بعد المائة",
+          "dense_score": 0.6523293256759644,
+          "reranker_score": 0.16503019630908966,
+          "reranker_confidence": 0.5411641660695193,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "التزاماته العقدية",
+          "التزاماته النظامية"
+        ],
+        [
+          "الغش"
+        ],
+        [
+          "يختلف جوهرياً"
+        ],
+        [
+          "اعتداء"
+        ],
+        [
+          "خطر جسيم"
+        ],
+        [
+          "القسوة",
+          "الجور",
+          "الإهانة"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "التزاماته العقدية",
+            "التزاماته النظامية"
+          ],
+          "matched": true,
+          "matched_value": "التزاماته العقدية"
+        },
+        {
+          "alternatives": [
+            "الغش"
+          ],
+          "matched": true,
+          "matched_value": "الغش"
+        },
+        {
+          "alternatives": [
+            "يختلف جوهرياً"
+          ],
+          "matched": true,
+          "matched_value": "يختلف جوهرياً"
+        },
+        {
+          "alternatives": [
+            "اعتداء"
+          ],
+          "matched": true,
+          "matched_value": "اعتداء"
+        },
+        {
+          "alternatives": [
+            "خطر جسيم"
+          ],
+          "matched": true,
+          "matched_value": "خطر جسيم"
+        },
+        {
+          "alternatives": [
+            "القسوة",
+            "الجور",
+            "الإهانة"
+          ],
+          "matched": true,
+          "matched_value": "القسوة"
+        }
+      ],
+      "answer": "يحق للعامل ترك العمل دون إشعار مع احتفاظه بحقوقه النظامية كلها في الحالات التالية:\n1. إذا لم يقم صاحب العمل بالوفاء بالتزاماته العقدية أو النظامية الجوهرية إزاء العامل.\n2. إذا ثبت أن صاحب العمل أو من يمثله قد أدخل عليه الغش وقت التعاقد فيما يتعلق بشروط العمل وظروفه.\n3. إذا كلفه صاحب العمل دون رضاه بعمل يختلف جوهرياً عن العمل المتفق عليه، ومخالفاً لما تقره المادة الستون من هذا النظام.\n4. إذا وقع من صاحب العمل أو من أحد أفراد أسرته، أو من المدير المسؤول اعتداء يتسم بالعنف، أو سلوك مخل بالآداب نحو العامل أو أحد أفراد أسرته.\n5. إذا اتسمت معاملة صاحب العمل أو المدير المسؤول بمظاهر من القسوة والجور أو الإهانة.\n6. إذا كان في مقر العمل خطر جسيم يهدد سلامة العامل أو صحته، بشرط أن يكون صاحب العمل قد علم بوجوده، ولم يتخذ من الإجراءات ما يدل على إزالته.\n7. إذا كان صاحب العمل أو من يمثله قد دفع العامل بتصرفاته وعلى الأخص بمعاملته الجائرة أو بمخالفته شروط العقد إلى أن يكون العامل في الظاهر هو الذي أنهى العقد.",
+      "clarifying_question": "",
+      "latency_s": 2.433195993071422
+    },
+    {
+      "id": 4,
+      "query": "كيف تحسب مكافأة نهاية الخدمة؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الرابعة والثمانون",
+      "sources": [
+        "المادة الرابعة والثمانون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6341914534568787,
+      "reranker_score": 0.6482931971549988,
+      "reranker_confidence": 0.6566257355450368,
+      "reranker_margin": 0.4178711920976639,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الرابعة والثمانون",
+          "dense_score": 0.6341914534568787,
+          "reranker_score": 0.6482931971549988,
+          "reranker_confidence": 0.6566257355450368,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الخامسة والثمانون",
+          "dense_score": 0.6241708993911743,
+          "reranker_score": 0.2304220050573349,
+          "reranker_confidence": 0.5573519703017372,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة السابعة والثمانون",
+          "dense_score": 0.5765019655227661,
+          "reranker_score": 0.0048193298280239105,
+          "reranker_confidence": 0.5012048301250642,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "نصف شهر"
+        ],
+        [
+          "الخمس الأولى"
+        ],
+        [
+          "شهر"
+        ],
+        [
+          "السنوات التالية"
+        ],
+        [
+          "الأجر الأخير"
+        ],
+        [
+          "أجزاء السنة"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "نصف شهر"
+          ],
+          "matched": true,
+          "matched_value": "نصف شهر"
+        },
+        {
+          "alternatives": [
+            "الخمس الأولى"
+          ],
+          "matched": true,
+          "matched_value": "الخمس الأولى"
+        },
+        {
+          "alternatives": [
+            "شهر"
+          ],
+          "matched": true,
+          "matched_value": "شهر"
+        },
+        {
+          "alternatives": [
+            "السنوات التالية"
+          ],
+          "matched": true,
+          "matched_value": "السنوات التالية"
+        },
+        {
+          "alternatives": [
+            "الأجر الأخير"
+          ],
+          "matched": true,
+          "matched_value": "الأجر الأخير"
+        },
+        {
+          "alternatives": [
+            "أجزاء السنة"
+          ],
+          "matched": true,
+          "matched_value": "أجزاء السنة"
+        }
+      ],
+      "answer": "تحسب مكافأة نهاية الخدمة على أساس أجر العامل نصف شهر عن كل سنة من السنوات الخمس الأولى، وأجر شهر عن كل سنة من السنوات التالية. ويستحق العامل مكافأة عن أجزاء السنة بنسبة ما قضاه منها في العمل، ويستند الأجر الأخير في الحساب إلى الأجر الذي كان يحصل عليه العامل قبل انتهاء العلاقة.",
+      "clarifying_question": "",
+      "latency_s": 1.0093942820094526
+    },
+    {
+      "id": 5,
+      "query": "ما مدة الإشعار لإنهاء عقد غير محدد المدة إذا كان الأجر شهرياً، سواء كان الإنهاء من العامل أو من صاحب العمل؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الخامسة والسبعون",
+      "sources": [
+        "المادة الخامسة والسبعون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7177594304084778,
+      "reranker_score": 0.9987994432449341,
+      "reranker_confidence": 0.7308224693773289,
+      "reranker_margin": 0.354059636592865,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الخامسة والسبعون",
+          "dense_score": 0.7177594304084778,
+          "reranker_score": 0.9987994432449341,
+          "reranker_confidence": 0.7308224693773289,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة السادسة والسبعون",
+          "dense_score": 0.6310199499130249,
+          "reranker_score": 0.6447398066520691,
+          "reranker_confidence": 0.6558241130470649,
+          "dense_rank": 3,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثامنة والثمانون",
+          "dense_score": 0.6310680508613586,
+          "reranker_score": 0.3387967646121979,
+          "reranker_confidence": 0.5838982130979938,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "ثلاثين",
+          "30"
+        ],
+        [
+          "ستين",
+          "60"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "ثلاثين",
+            "30"
+          ],
+          "matched": true,
+          "matched_value": "30"
+        },
+        {
+          "alternatives": [
+            "ستين",
+            "60"
+          ],
+          "matched": true,
+          "matched_value": "60"
+        }
+      ],
+      "answer": "مدة الإشعار لإنهاء عقد غير محدد المدة إذا كان الأجر شهرياً، سواء كان الإنهاء من العامل أو من صاحب العمل، هي:\n- 30 يوماً إذا كان الإنهاء من العامل.\n- 60 يوماً إذا كان الإنهاء من صاحب العمل.",
+      "clarifying_question": "",
+      "latency_s": 0.9005611040629447
+    },
+    {
+      "id": 6,
+      "query": "كم ساعات العمل في رمضان للمسلمين؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثامنة والتسعون",
+      "sources": [
+        "المادة الثامنة والتسعون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6911797523498535,
+      "reranker_score": 0.9600014686584473,
+      "reranker_confidence": 0.7231220991741826,
+      "reranker_margin": 0.5122911930084229,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثامنة والتسعون",
+          "dense_score": 0.6911797523498535,
+          "reranker_score": 0.9600014686584473,
+          "reranker_confidence": 0.7231220991741826,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الرابعة والستون بعد المائة",
+          "dense_score": 0.6219140291213989,
+          "reranker_score": 0.4477102756500244,
+          "reranker_confidence": 0.6100946937570099,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الأولى بعد المائة",
+          "dense_score": 0.5884043574333191,
+          "reranker_score": 0.013623264618217945,
+          "reranker_confidence": 0.5034057634807995,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "ست ساعات",
+          "6 ساعات"
+        ],
+        [
+          "ست وثلاثين",
+          "36"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "ست ساعات",
+            "6 ساعات"
+          ],
+          "matched": true,
+          "matched_value": "ست ساعات"
+        },
+        {
+          "alternatives": [
+            "ست وثلاثين",
+            "36"
+          ],
+          "matched": true,
+          "matched_value": "ست وثلاثين"
+        }
+      ],
+      "answer": "لا تزيد ساعات العمل الفعلية خلال شهر رمضان للمسلمين على ست ساعات في اليوم، أو ست وثلاثين ساعة في الأسبوع.",
+      "clarifying_question": "",
+      "latency_s": 0.6561528721358627
+    },
+    {
+      "id": 7,
+      "query": "كيف يحسب أجر العمل الإضافي؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة السابعة بعد المائة",
+      "sources": [
+        "المادة السابعة بعد المائة"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6606457233428955,
+      "reranker_score": 0.8609973788261414,
+      "reranker_confidence": 0.7028689932368768,
+      "reranker_margin": 0.7851744890213013,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة السابعة بعد المائة",
+          "dense_score": 0.6606457233428955,
+          "reranker_score": 0.8609973788261414,
+          "reranker_confidence": 0.7028689932368768,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة السادسة والتسعون",
+          "dense_score": 0.5924513339996338,
+          "reranker_score": 0.07582288980484009,
+          "reranker_confidence": 0.5189466461238201,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الرابعة والثمانون",
+          "dense_score": 0.5769887566566467,
+          "reranker_score": 0.015026762150228024,
+          "reranker_confidence": 0.5037566198496386,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "أجر الساعة"
+        ],
+        [
+          "75%",
+          "75 %",
+          "خمسة وسبعين"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "أجر الساعة"
+          ],
+          "matched": true,
+          "matched_value": "أجر الساعة"
+        },
+        {
+          "alternatives": [
+            "75%",
+            "75 %",
+            "خمسة وسبعين"
+          ],
+          "matched": true,
+          "matched_value": "75%"
+        }
+      ],
+      "answer": "يجب على صاحب العمل أن يدفع للعامل أجراً إضافياً عن ساعات العمل الإضافية يوازي أجر الساعة مضافاً إليه (75%) من أجره الأساسي. ويجوز لصاحب العمل بموافقة العامل أن يحتسب للعامل أيام إجازة تعويضية مدفوعة الأجر بدلاً عن الأجر المستحق للعامل لساعات العمل الإضافية.",
+      "clarifying_question": "",
+      "latency_s": 1.0167330119293183
+    },
+    {
+      "id": 8,
+      "query": "إذا لم يكن عقد العمل مكتوباً فهل يبقى قائماً؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الحادية والخمسون",
+      "sources": [
+        "المادة الحادية والخمسون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7006716728210449,
+      "reranker_score": 0.9957320094108582,
+      "reranker_confidence": 0.7302186136879335,
+      "reranker_margin": 0.6936465203762054,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الحادية والخمسون",
+          "dense_score": 0.7006716728210449,
+          "reranker_score": 0.9957320094108582,
+          "reranker_confidence": 0.7302186136879335,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة السابعة والثلاثون",
+          "dense_score": 0.6314290761947632,
+          "reranker_score": 0.3020854890346527,
+          "reranker_confidence": 0.5749522526193707,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة التاسعة والسبعون",
+          "dense_score": 0.6271877288818359,
+          "reranker_score": 0.021160610020160675,
+          "reranker_confidence": 0.5052899551156219,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "قائماً",
+          "قائم"
+        ],
+        [
+          "غير مكتوب"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "قائماً",
+            "قائم"
+          ],
+          "matched": true,
+          "matched_value": "قائماً"
+        },
+        {
+          "alternatives": [
+            "غير مكتوب"
+          ],
+          "matched": true,
+          "matched_value": "غير مكتوب"
+        }
+      ],
+      "answer": "يعد العقد قائماً ولو كان غير مكتوب. يجوز للعامل وحده إثبات العقد وحقوقه التي نشأت عنه بجميع طرق الإثبات.",
+      "clarifying_question": "",
+      "latency_s": 0.7202179438900203
+    },
+    {
+      "id": 9,
+      "query": "من يتحمل رسوم استقدام العامل غير السعودي ورخصة العمل؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الأربعون",
+      "sources": [
+        "المادة الأربعون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7133359909057617,
+      "reranker_score": 0.9974862337112427,
+      "reranker_confidence": 0.7305640552079766,
+      "reranker_margin": 0.6840166747570038,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الأربعون",
+          "dense_score": 0.7133359909057617,
+          "reranker_score": 0.9974862337112427,
+          "reranker_confidence": 0.7305640552079766,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثالثة والثلاثون",
+          "dense_score": 0.6019068956375122,
+          "reranker_score": 0.3134695589542389,
+          "reranker_confidence": 0.5777319144154388,
+          "dense_rank": 3,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثلاثون",
+          "dense_score": 0.6252139210700989,
+          "reranker_score": 0.20158255100250244,
+          "reranker_confidence": 0.5502256739414982,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "صاحب العمل"
+        ],
+        [
+          "رسوم استقدام"
+        ],
+        [
+          "رخصة العمل"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "صاحب العمل"
+          ],
+          "matched": true,
+          "matched_value": "صاحب العمل"
+        },
+        {
+          "alternatives": [
+            "رسوم استقدام"
+          ],
+          "matched": true,
+          "matched_value": "رسوم استقدام"
+        },
+        {
+          "alternatives": [
+            "رخصة العمل"
+          ],
+          "matched": true,
+          "matched_value": "رخصة العمل"
+        }
+      ],
+      "answer": "يتحمل صاحب العمل رسوم استقدام العامل غير السعودي ورسوم الإقامة ورخصة العمل وتجديدهما، وما يترتب على تأخير ذلك من غرامات يتسبب بها صاحب العمل، ورسوم تغيير المهنة، والخروج والعودة، وتذكرة عودة العامل إلى موطنه بعد انتهاء العلاقة بين الطرفين.",
+      "clarifying_question": "",
+      "latency_s": 0.9796487200073898
+    },
+    {
+      "id": 10,
+      "query": "هل يجوز نقل العامل إلى مكان آخر يغير محل إقامته دون موافقته؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثامنة والخمسون",
+      "sources": [
+        "المادة الثامنة والخمسون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7464829683303833,
+      "reranker_score": 0.9997445940971375,
+      "reranker_confidence": 0.7310083598183557,
+      "reranker_margin": 0.5982451736927032,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثامنة والخمسون",
+          "dense_score": 0.7464829683303833,
+          "reranker_score": 0.9997445940971375,
+          "reranker_confidence": 0.7310083598183557,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة التاسعة والخمسون",
+          "dense_score": 0.584601640701294,
+          "reranker_score": 0.4014994204044342,
+          "reranker_confidence": 0.5990478586093991,
+          "dense_rank": 3,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثانية والثلاثون",
+          "dense_score": 0.5856042504310608,
+          "reranker_score": 0.012919871136546135,
+          "reranker_confidence": 0.5032299228552083,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "لا يجوز"
+        ],
+        [
+          "موافقته"
+        ],
+        [
+          "كتابة"
+        ],
+        [
+          "تغيير محل إقامته"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "لا يجوز"
+          ],
+          "matched": true,
+          "matched_value": "لا يجوز"
+        },
+        {
+          "alternatives": [
+            "موافقته"
+          ],
+          "matched": true,
+          "matched_value": "موافقته"
+        },
+        {
+          "alternatives": [
+            "كتابة"
+          ],
+          "matched": true,
+          "matched_value": "كتابة"
+        },
+        {
+          "alternatives": [
+            "تغيير محل إقامته"
+          ],
+          "matched": true,
+          "matched_value": "تغيير محل إقامته"
+        }
+      ],
+      "answer": "لا يجوز لصاحب العمل أن ينقل العامل بغير موافقته - كتابةً - من مكان عمله الأصلي إلى مكان آخر يقتضي تغيير محل إقامته.",
+      "clarifying_question": "",
+      "latency_s": 0.7632574799936265
+    },
+    {
+      "id": 11,
+      "query": "ما الجزاءات التأديبية التي يمكن توقيعها على العامل؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة السادسة والستون",
+      "sources": [
+        "المادة السادسة والستون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7494968771934509,
+      "reranker_score": 0.9993579983711243,
+      "reranker_confidence": 0.7309323347259249,
+      "reranker_margin": 0.00784599781036377,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة السادسة والستون",
+          "dense_score": 0.7494968771934509,
+          "reranker_score": 0.9993579983711243,
+          "reranker_confidence": 0.7309323347259249,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة السبعون",
+          "dense_score": 0.6745724081993103,
+          "reranker_score": 0.9915120005607605,
+          "reranker_confidence": 0.7293864673033076,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الحادية والسبعون",
+          "dense_score": 0.6464436054229736,
+          "reranker_score": 0.9904571175575256,
+          "reranker_confidence": 0.729178202170226,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "الإنذار"
+        ],
+        [
+          "الغرامة"
+        ],
+        [
+          "الحرمان من العلاوة"
+        ],
+        [
+          "تأجيل الترقية"
+        ],
+        [
+          "الإيقاف عن العمل"
+        ],
+        [
+          "الفصل"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "الإنذار"
+          ],
+          "matched": true,
+          "matched_value": "الإنذار"
+        },
+        {
+          "alternatives": [
+            "الغرامة"
+          ],
+          "matched": true,
+          "matched_value": "الغرامة"
+        },
+        {
+          "alternatives": [
+            "الحرمان من العلاوة"
+          ],
+          "matched": true,
+          "matched_value": "الحرمان من العلاوة"
+        },
+        {
+          "alternatives": [
+            "تأجيل الترقية"
+          ],
+          "matched": true,
+          "matched_value": "تأجيل الترقية"
+        },
+        {
+          "alternatives": [
+            "الإيقاف عن العمل"
+          ],
+          "matched": true,
+          "matched_value": "الإيقاف عن العمل"
+        },
+        {
+          "alternatives": [
+            "الفصل"
+          ],
+          "matched": true,
+          "matched_value": "الفصل"
+        }
+      ],
+      "answer": "الجزاءات التأديبية التي يمكن توقيعها على العامل هي:\n1. الإنذار.\n2. الغرامة.\n3. الحرمان من العلاوة أو تأجيلها لمدة لا تزيد على سنة متى كانت مقررة من صاحب العمل.\n4. تأجيل الترقية مدة لا تزيد على سنة متى كانت مقررة من صاحب العمل.\n5. الإيقاف عن العمل مع الحرمان من الأجر.\n6. الفصل من العمل في الحالات المقررة في النظام.",
+      "clarifying_question": "",
+      "latency_s": 1.2166521449107677
+    },
+    {
+      "id": 12,
+      "query": "هل يحق للعامل الحصول على شهادة خدمة بعد انتهاء العقد؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الرابعة والستون",
+      "sources": [
+        "المادة الرابعة والستون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.710938036441803,
+      "reranker_score": 0.9834386706352234,
+      "reranker_confidence": 0.7277899906541703,
+      "reranker_margin": 0.8797702938318253,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الرابعة والستون",
+          "dense_score": 0.710938036441803,
+          "reranker_score": 0.9834386706352234,
+          "reranker_confidence": 0.7277899906541703,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثامنة والثمانون",
+          "dense_score": 0.602899968624115,
+          "reranker_score": 0.10366837680339813,
+          "reranker_confidence": 0.5258939079156817,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الرابعة والثمانون",
+          "dense_score": 0.5821012854576111,
+          "reranker_score": 0.017931966111063957,
+          "reranker_confidence": 0.5044828714041143,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "نعم"
+        ],
+        [
+          "شهادة خدمة"
+        ]
+      ],
+      "factual_coverage": 0.5,
+      "fully_factual": false,
+      "fact_results": [
+        {
+          "alternatives": [
+            "نعم"
+          ],
+          "matched": false,
+          "matched_value": null
+        },
+        {
+          "alternatives": [
+            "شهادة خدمة"
+          ],
+          "matched": true,
+          "matched_value": "شهادة خدمة"
+        }
+      ],
+      "answer": "يحق للعامل الحصول على شهادة خدمة بعد انتهاء العقد بناءً على طلبه، وذلك وفقاً للمادة الرابعة والستون من نظام العمل السعودي.",
+      "clarifying_question": "",
+      "latency_s": 0.7411514578852803
+    },
+    {
+      "id": 13,
+      "query": "إذا انتقلت ملكية المنشأة إلى مالك جديد، ماذا يحدث لعقود العمل وحقوق العمال السابقة؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثامنة عشرة",
+      "sources": [
+        "المادة الثامنة عشرة"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6930772066116333,
+      "reranker_score": 0.9996869564056396,
+      "reranker_confidence": 0.7309970260720483,
+      "reranker_margin": 0.9898590222001076,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثامنة عشرة",
+          "dense_score": 0.6930772066116333,
+          "reranker_score": 0.9996869564056396,
+          "reranker_confidence": 0.7309970260720483,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الحادية عشرة",
+          "dense_score": 0.5624051690101624,
+          "reranker_score": 0.009827934205532074,
+          "reranker_confidence": 0.502456963775254,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة التاسعة والثلاثون",
+          "dense_score": 0.530684232711792,
+          "reranker_score": 0.001200551399961114,
+          "reranker_confidence": 0.5003001378139407,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "عقود العمل نافذة",
+          "العقود نافذة"
+        ],
+        [
+          "الخدمة مستمرة"
+        ],
+        [
+          "الخلف والسلف"
+        ],
+        [
+          "بالتضامن"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "عقود العمل نافذة",
+            "العقود نافذة"
+          ],
+          "matched": true,
+          "matched_value": "عقود العمل نافذة"
+        },
+        {
+          "alternatives": [
+            "الخدمة مستمرة"
+          ],
+          "matched": true,
+          "matched_value": "الخدمة مستمرة"
+        },
+        {
+          "alternatives": [
+            "الخلف والسلف"
+          ],
+          "matched": true,
+          "matched_value": "الخلف والسلف"
+        },
+        {
+          "alternatives": [
+            "بالتضامن"
+          ],
+          "matched": true,
+          "matched_value": "بالتضامن"
+        }
+      ],
+      "answer": "إذا انتقلت ملكية المنشأة إلى مالك جديد، تبقى عقود العمل نافذة في الحالين، وتعد الخدمة مستمرة. أما بالنسبة لحقوق العمال الناشئة عن المدة السابقة لهذا التغيير من أجور، أو مكافأة نهاية خدمة مفترضة الاستحقاق بتاريخ انتقال الملكية، أو غير ذلك من حقوق؛ فيكون الخلف والسلف مسؤولين عنها بالتضامن.",
+      "clarifying_question": "",
+      "latency_s": 1.1138657529372722
+    },
+    {
+      "id": 14,
+      "query": "ما أولوية مستحقات العامل إذا أفلس صاحب العمل أو تمت تصفية المنشأة؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة التاسعة عشرة",
+      "sources": [
+        "المادة التاسعة عشرة"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.640137791633606,
+      "reranker_score": 0.9840265512466431,
+      "reranker_confidence": 0.7279064410957272,
+      "reranker_margin": 0.6247085630893707,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة التاسعة عشرة",
+          "dense_score": 0.640137791633606,
+          "reranker_score": 0.9840265512466431,
+          "reranker_confidence": 0.7279064410957272,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثامنة والثمانون",
+          "dense_score": 0.622563362121582,
+          "reranker_score": 0.35931798815727234,
+          "reranker_confidence": 0.5888753282036001,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الحادية والتسعون",
+          "dense_score": 0.5777982473373413,
+          "reranker_score": 0.11823666840791702,
+          "reranker_confidence": 0.5295247789681006,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "ديوناً ممتازة",
+          "ديون ممتازة"
+        ],
+        [
+          "الدرجة الأولى"
+        ],
+        [
+          "أجر شهر واحد"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "ديوناً ممتازة",
+            "ديون ممتازة"
+          ],
+          "matched": true,
+          "matched_value": "ديوناً ممتازة"
+        },
+        {
+          "alternatives": [
+            "الدرجة الأولى"
+          ],
+          "matched": true,
+          "matched_value": "الدرجة الأولى"
+        },
+        {
+          "alternatives": [
+            "أجر شهر واحد"
+          ],
+          "matched": true,
+          "matched_value": "أجر شهر واحد"
+        }
+      ],
+      "answer": "تعد المبالغ المستحقة للعامل أو ورثته بمقتضى هذا النظام ديوناً ممتازة من الدرجة الأولى. وللعامل وورثته في سبيل استيفائها امتياز على جميع أموال صاحب العمل. وفي حالة إفلاس صاحب العمل أو تصفية منشآته تسجل المبالغ المذكورة ديوناً ممتازة، ويدفع للعامل مبلغ معجل يعادل أجر شهر واحد، وذلك قبل سداد أي مصروف آخر - بما في ذلك المصروفات القضائية ومصروفات الإفلاس أو التصفية.",
+      "clarifying_question": "",
+      "latency_s": 1.3573295979294926
+    },
+    {
+      "id": 15,
+      "query": "هل يجوز ممارسة نشاط توظيف السعوديين أو استقدام العمال أو الإسناد دون ترخيص؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثلاثون",
+      "sources": [
+        "المادة الثلاثون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7304553985595703,
+      "reranker_score": 0.9995001554489136,
+      "reranker_confidence": 0.7309602918770735,
+      "reranker_margin": 0.6525750160217285,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثلاثون",
+          "dense_score": 0.7304553985595703,
+          "reranker_score": 0.9995001554489136,
+          "reranker_confidence": 0.7309602918770735,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة السادسة والعشرون",
+          "dense_score": 0.5927623510360718,
+          "reranker_score": 0.34692513942718506,
+          "reranker_confidence": 0.5858717351802459,
+          "dense_rank": 3,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثالثة والثلاثون",
+          "dense_score": 0.6644476652145386,
+          "reranker_score": 0.18119299411773682,
+          "reranker_confidence": 0.5451747222017992,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "لا يجوز"
+        ],
+        [
+          "مرخصاً",
+          "ترخيص"
+        ],
+        [
+          "الوزارة"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "لا يجوز"
+          ],
+          "matched": true,
+          "matched_value": "لا يجوز"
+        },
+        {
+          "alternatives": [
+            "مرخصاً",
+            "ترخيص"
+          ],
+          "matched": true,
+          "matched_value": "ترخيص"
+        },
+        {
+          "alternatives": [
+            "الوزارة"
+          ],
+          "matched": true,
+          "matched_value": "الوزارة"
+        }
+      ],
+      "answer": "لا يجوز لأي شخص طبيعي أو اعتباري أن يمارس نشاط توظيف السعوديين أو نشاط استقدام العمال أو نشاط الإسناد دون ترخيص له من الوزارة.",
+      "clarifying_question": "",
+      "latency_s": 0.7742217518389225
+    },
+    {
+      "id": 16,
+      "query": "إذا لم تحدد مدة عقد العامل غير السعودي، فما المدة التي يعد العقد محدداً بها؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة السابعة والثلاثون",
+      "sources": [
+        "المادة السابعة والثلاثون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7759101390838623,
+      "reranker_score": 0.9942483901977539,
+      "reranker_confidence": 0.7299262418001254,
+      "reranker_margin": 0.03070068359375,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة السابعة والثلاثون",
+          "dense_score": 0.7759101390838623,
+          "reranker_score": 0.9942483901977539,
+          "reranker_confidence": 0.7299262418001254,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الخامسة والخمسون",
+          "dense_score": 0.6679254770278931,
+          "reranker_score": 0.9635477066040039,
+          "reranker_confidence": 0.7238315525319072,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الخامسة والسبعون",
+          "dense_score": 0.5959185361862183,
+          "reranker_score": 0.48118236660957336,
+          "reranker_confidence": 0.618027034528996,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "سنة"
+        ],
+        [
+          "تاريخ مباشرة العامل",
+          "مباشرة العامل الفعلية"
+        ],
+        [
+          "مدة مماثلة"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "سنة"
+          ],
+          "matched": true,
+          "matched_value": "سنة"
+        },
+        {
+          "alternatives": [
+            "تاريخ مباشرة العامل",
+            "مباشرة العامل الفعلية"
+          ],
+          "matched": true,
+          "matched_value": "تاريخ مباشرة العامل"
+        },
+        {
+          "alternatives": [
+            "مدة مماثلة"
+          ],
+          "matched": true,
+          "matched_value": "مدة مماثلة"
+        }
+      ],
+      "answer": "إذا لم تحدد مدة عقد العامل غير السعودي، فإنه يعد العقد محدداً بسنة من تاريخ مباشرة العامل الفعلية. وإذا استمر العامل بعد انتهاء هذه المدة، فإنه يغد متجدداً لمدة مماثلة.",
+      "clarifying_question": "",
+      "latency_s": 0.9005329720675945
+    },
+    {
+      "id": 17,
+      "query": "ما المقصود بعقد التأهيل والتدريب؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الخامسة والأربعون",
+      "sources": [
+        "المادة الخامسة والأربعون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6294069290161133,
+      "reranker_score": 0.9773243069648743,
+      "reranker_confidence": 0.7265769778557315,
+      "reranker_margin": 0.013176441192626953,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الخامسة والأربعون",
+          "dense_score": 0.6294069290161133,
+          "reranker_score": 0.9773243069648743,
+          "reranker_confidence": 0.7265769778557315,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة السادسة والأربعون",
+          "dense_score": 0.6003648042678833,
+          "reranker_score": 0.9641478657722473,
+          "reranker_confidence": 0.723951507893453,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثامنة والأربعون",
+          "dense_score": 0.5726945400238037,
+          "reranker_score": 0.8276243209838867,
+          "reranker_confidence": 0.695852370792798,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "تأهيل",
+          "تدريب"
+        ],
+        [
+          "إعداده"
+        ],
+        [
+          "مهنة معينة"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "تأهيل",
+            "تدريب"
+          ],
+          "matched": true,
+          "matched_value": "تأهيل"
+        },
+        {
+          "alternatives": [
+            "إعداده"
+          ],
+          "matched": true,
+          "matched_value": "إعداده"
+        },
+        {
+          "alternatives": [
+            "مهنة معينة"
+          ],
+          "matched": true,
+          "matched_value": "مهنة معينة"
+        }
+      ],
+      "answer": "المقصود بعقد التأهيل والتدريب عقد يلتزم بموجبه صاحب العمل بتأهيل أو تدريب شخص لإعداده في مهنة معينة.",
+      "clarifying_question": "",
+      "latency_s": 0.7852890400681645
+    },
+    {
+      "id": 18,
+      "query": "ما البيانات الأساسية التي يجب أن يتضمنها عقد التأهيل أو التدريب؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة السادسة والأربعون",
+      "sources": [
+        "المادة السادسة والأربعون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.627709686756134,
+      "reranker_score": 0.9739745259284973,
+      "reranker_confidence": 0.7259109958843498,
+      "reranker_margin": 0.5385175347328186,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة السادسة والأربعون",
+          "dense_score": 0.627709686756134,
+          "reranker_score": 0.9739745259284973,
+          "reranker_confidence": 0.7259109958843498,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الخامسة والأربعون",
+          "dense_score": 0.5776095390319824,
+          "reranker_score": 0.4354569911956787,
+          "reranker_confidence": 0.607175991889891,
+          "dense_rank": 3,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الرابعة والأربعون",
+          "dense_score": 0.5828066468238831,
+          "reranker_score": 0.012252061627805233,
+          "reranker_confidence": 0.5030629770909869,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "مكتوباً",
+          "مكتوب"
+        ],
+        [
+          "نوع المهنة"
+        ],
+        [
+          "مدة التدريب"
+        ],
+        [
+          "المهارة"
+        ],
+        [
+          "المكافأة"
+        ],
+        [
+          "حقوق المتدرب",
+          "حقوق المتدرب وصاحب العمل"
+        ]
+      ],
+      "factual_coverage": 0.8333333333333334,
+      "fully_factual": false,
+      "fact_results": [
+        {
+          "alternatives": [
+            "مكتوباً",
+            "مكتوب"
+          ],
+          "matched": false,
+          "matched_value": null
+        },
+        {
+          "alternatives": [
+            "نوع المهنة"
+          ],
+          "matched": true,
+          "matched_value": "نوع المهنة"
+        },
+        {
+          "alternatives": [
+            "مدة التدريب"
+          ],
+          "matched": true,
+          "matched_value": "مدة التدريب"
+        },
+        {
+          "alternatives": [
+            "المهارة"
+          ],
+          "matched": true,
+          "matched_value": "المهارة"
+        },
+        {
+          "alternatives": [
+            "المكافأة"
+          ],
+          "matched": true,
+          "matched_value": "المكافأة"
+        },
+        {
+          "alternatives": [
+            "حقوق المتدرب",
+            "حقوق المتدرب وصاحب العمل"
+          ],
+          "matched": true,
+          "matched_value": "حقوق المتدرب"
+        }
+      ],
+      "answer": "يجب أن يتضمن عقد التأهيل أو التدريب البيانات الأساسية التالية: نوع المهنة المتعاقد للتدريب عليها، ومدة التدريب ومراحله المتابعة، والمهارة المستهدف اكتسابها منه، ومقدار المكافأة التي تعطى للمتدرب في كل مرحلة، وحقوق المتدرب وصاحب العمل وواجباتهما، وما إذا كان التأهيل أو التدريب في منشأة تتبع صاحب العمل أو لدى منشأة أخرى.",
+      "clarifying_question": "",
+      "latency_s": 1.119824563153088
+    },
+    {
+      "id": 19,
+      "query": "كيف يعرّف نظام العمل عقد العمل؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الخمسون",
+      "sources": [
+        "المادة الخمسون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7193499207496643,
+      "reranker_score": 0.8150424957275391,
+      "reranker_confidence": 0.6931829874056467,
+      "reranker_margin": 0.43718987703323364,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الخمسون",
+          "dense_score": 0.7193499207496643,
+          "reranker_score": 0.8150424957275391,
+          "reranker_confidence": 0.6931829874056467,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثانية والخمسون",
+          "dense_score": 0.6291282176971436,
+          "reranker_score": 0.3778526186943054,
+          "reranker_confidence": 0.5933550764487803,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الحادية والخمسون",
+          "dense_score": 0.6054786443710327,
+          "reranker_score": 0.19534264504909515,
+          "reranker_confidence": 0.5486809592474099,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "صاحب عمل"
+        ],
+        [
+          "عامل"
+        ],
+        [
+          "إدارة صاحب العمل",
+          "إشرافه"
+        ],
+        [
+          "أجر"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "صاحب عمل"
+          ],
+          "matched": true,
+          "matched_value": "صاحب عمل"
+        },
+        {
+          "alternatives": [
+            "عامل"
+          ],
+          "matched": true,
+          "matched_value": "عامل"
+        },
+        {
+          "alternatives": [
+            "إدارة صاحب العمل",
+            "إشرافه"
+          ],
+          "matched": true,
+          "matched_value": "إدارة صاحب العمل"
+        },
+        {
+          "alternatives": [
+            "أجر"
+          ],
+          "matched": true,
+          "matched_value": "أجر"
+        }
+      ],
+      "answer": "يعرّف نظام العمل عقد العمل بأنه عقد مبرم بين صاحب عمل وعامل، يتعهد الأخير بموجبه أن يعمل تحت إدارة صاحب العمل أو إشرافه مقابل أجر.",
+      "clarifying_question": "",
+      "latency_s": 0.7846149250399321
+    },
+    {
+      "id": 20,
+      "query": "ما المعلومات الأساسية التي يجب أن يتضمنها نموذج عقد العمل؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثانية والخمسون",
+      "sources": [
+        "المادة الثانية والخمسون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6829381585121155,
+      "reranker_score": 0.9761541485786438,
+      "reranker_confidence": 0.7263444492047247,
+      "reranker_margin": 0.5783124566078186,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثانية والخمسون",
+          "dense_score": 0.6829381585121155,
+          "reranker_score": 0.9761541485786438,
+          "reranker_confidence": 0.7263444492047247,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الحادية والسبعون بعد المائة",
+          "dense_score": 0.5855716466903687,
+          "reranker_score": 0.3978416919708252,
+          "reranker_confidence": 0.5981689931419456,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الحادية والخمسون",
+          "dense_score": 0.5761719346046448,
+          "reranker_score": 0.09000176191329956,
+          "reranker_confidence": 0.5224852643793418,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "اسم صاحب العمل"
+        ],
+        [
+          "اسم العامل"
+        ],
+        [
+          "الأجر"
+        ],
+        [
+          "نوع العمل"
+        ],
+        [
+          "مكانه",
+          "مكان العمل"
+        ],
+        [
+          "تاريخ الالتحاق"
+        ],
+        [
+          "مدة العقد"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "اسم صاحب العمل"
+          ],
+          "matched": true,
+          "matched_value": "اسم صاحب العمل"
+        },
+        {
+          "alternatives": [
+            "اسم العامل"
+          ],
+          "matched": true,
+          "matched_value": "اسم العامل"
+        },
+        {
+          "alternatives": [
+            "الأجر"
+          ],
+          "matched": true,
+          "matched_value": "الأجر"
+        },
+        {
+          "alternatives": [
+            "نوع العمل"
+          ],
+          "matched": true,
+          "matched_value": "نوع العمل"
+        },
+        {
+          "alternatives": [
+            "مكانه",
+            "مكان العمل"
+          ],
+          "matched": true,
+          "matched_value": "مكانه"
+        },
+        {
+          "alternatives": [
+            "تاريخ الالتحاق"
+          ],
+          "matched": true,
+          "matched_value": "تاريخ الالتحاق"
+        },
+        {
+          "alternatives": [
+            "مدة العقد"
+          ],
+          "matched": true,
+          "matched_value": "مدة العقد"
+        }
+      ],
+      "answer": "يجب أن يتضمن نموذج عقد العمل المعلومات الأساسية التالية: اسم صاحب العمل ومكانه، واسم العامل وجنسيته، وما يلزم لإثبات شخصيته، وعنوان إقامته، والأجر المتفق عليه بما في ذلك المزايا والبدلات، ونوع العمل ومكانه، وتاريخ الالتحاق به، ومدة العقد إن كان محدد المدة، وحقوق كل طرف والتزاماته الأساسية.",
+      "clarifying_question": "",
+      "latency_s": 1.1252069401089102
+    },
+    {
+      "id": 21,
+      "query": "هل يمكن إخضاع العامل لفترة تجربة ثانية لدى صاحب العمل نفسه؟ ومتى؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الرابعة والخمسون",
+      "sources": [
+        "المادة الرابعة والخمسون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7400788068771362,
+      "reranker_score": 0.9981092214584351,
+      "reranker_confidence": 0.7306866666352801,
+      "reranker_margin": 0.5816527307033539,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الرابعة والخمسون",
+          "dense_score": 0.7400788068771362,
+          "reranker_score": 0.9981092214584351,
+          "reranker_confidence": 0.7306866666352801,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثانية",
+          "dense_score": 0.5924053192138672,
+          "reranker_score": 0.4164564907550812,
+          "reranker_confidence": 0.6026350090679572,
+          "dense_rank": 3,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثالثة والخمسون",
+          "dense_score": 0.6190406680107117,
+          "reranker_score": 0.2818368375301361,
+          "reranker_confidence": 0.5699964914853647,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "كتابة"
+        ],
+        [
+          "مهنة أخرى",
+          "عمل آخر"
+        ],
+        [
+          "ستة أشهر",
+          "6 أشهر"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "كتابة"
+          ],
+          "matched": true,
+          "matched_value": "كتابة"
+        },
+        {
+          "alternatives": [
+            "مهنة أخرى",
+            "عمل آخر"
+          ],
+          "matched": true,
+          "matched_value": "مهنة أخرى"
+        },
+        {
+          "alternatives": [
+            "ستة أشهر",
+            "6 أشهر"
+          ],
+          "matched": true,
+          "matched_value": "ستة أشهر"
+        }
+      ],
+      "answer": "يمكن إخضاع العامل لفترة تجربة ثانية لدى صاحب العمل نفسه، ولكن فقط في حالات محددة. يجوز باتفاق الطرفين كتابةً إخضاع العامل لفترة تجربة أخرى بشرط أن تكون في مهنة أخرى أو عمل آخر، أو أن يكون قد مضى على انتهاء علاقة العامل بصاحب العمل مدة لا تقل عن ستة أشهر. وإذا أنهي العقد خلال فترة التجربة فإن أياً من الطرفين لا يستحق تعويضاً، كما لا يستحق العامل مكافأة نهاية الخدمة عن ذلك.",
+      "clarifying_question": "",
+      "latency_s": 1.4152451700065285
+    },
+    {
+      "id": 22,
+      "query": "هل يستطيع صاحب العمل تكليف العامل بعمل يختلف جوهرياً عن العمل المتفق عليه؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الستون",
+      "sources": [
+        "المادة الستون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6988652348518372,
+      "reranker_score": 0.9977555871009827,
+      "reranker_confidence": 0.7306170714947114,
+      "reranker_margin": 0.00605696439743042,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الستون",
+          "dense_score": 0.6988652348518372,
+          "reranker_score": 0.9977555871009827,
+          "reranker_confidence": 0.7306170714947114,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثامنة والخمسون",
+          "dense_score": 0.6802089214324951,
+          "reranker_score": 0.9916986227035522,
+          "reranker_confidence": 0.7294233015499156,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثامنة والثلاثون",
+          "dense_score": 0.6200875639915466,
+          "reranker_score": 0.6862879991531372,
+          "reranker_confidence": 0.6651406655951081,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "لا يجوز"
+        ],
+        [
+          "موافقته الكتابية",
+          "موافقة كتابية"
+        ],
+        [
+          "الضرورة",
+          "ظروف عارضة"
+        ],
+        [
+          "ثلاثين يوماً",
+          "30 يوماً"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "لا يجوز"
+          ],
+          "matched": true,
+          "matched_value": "لا يجوز"
+        },
+        {
+          "alternatives": [
+            "موافقته الكتابية",
+            "موافقة كتابية"
+          ],
+          "matched": true,
+          "matched_value": "موافقته الكتابية"
+        },
+        {
+          "alternatives": [
+            "الضرورة",
+            "ظروف عارضة"
+          ],
+          "matched": true,
+          "matched_value": "الضرورة"
+        },
+        {
+          "alternatives": [
+            "ثلاثين يوماً",
+            "30 يوماً"
+          ],
+          "matched": true,
+          "matched_value": "ثلاثين يوماً"
+        }
+      ],
+      "answer": "لا يجوز لصاحب العمل تكليف العامل بعمل يختلف اختلافاً جوهرياً عن العمل المتفق عليه إلا بموافقته الكتابية أو في حالات الضرورة التي قد تقتضيها ظروف عارضة ولمدة لا تتجاوز ثلاثين يوماً في السنة.",
+      "clarifying_question": "",
+      "latency_s": 0.8892382739577442
+    },
+    {
+      "id": 23,
+      "query": "ما واجب العامل تجاه الأسرار الفنية والتجارية والصناعية للمنشأة؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الخامسة والستون",
+      "sources": [
+        "المادة الخامسة والستون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.5750108957290649,
+      "reranker_score": 0.9945481419563293,
+      "reranker_confidence": 0.7299853289675419,
+      "reranker_margin": 0.9186759740114212,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الخامسة والستون",
+          "dense_score": 0.5750108957290649,
+          "reranker_score": 0.9945481419563293,
+          "reranker_confidence": 0.7299853289675419,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثالثة والثمانون",
+          "dense_score": 0.5357472896575928,
+          "reranker_score": 0.07587216794490814,
+          "reranker_confidence": 0.5189589479577089,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة السادسة والستون بعد المائة",
+          "dense_score": 0.5342024564743042,
+          "reranker_score": 0.002058235462754965,
+          "reranker_confidence": 0.5005145586840353,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "يحفظ الأسرار",
+          "حفظ الأسرار"
+        ],
+        [
+          "الفنية"
+        ],
+        [
+          "التجارية"
+        ],
+        [
+          "الصناعية"
+        ],
+        [
+          "الإضرار بمصلحة صاحب العمل"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "يحفظ الأسرار",
+            "حفظ الأسرار"
+          ],
+          "matched": true,
+          "matched_value": "حفظ الأسرار"
+        },
+        {
+          "alternatives": [
+            "الفنية"
+          ],
+          "matched": true,
+          "matched_value": "الفنية"
+        },
+        {
+          "alternatives": [
+            "التجارية"
+          ],
+          "matched": true,
+          "matched_value": "التجارية"
+        },
+        {
+          "alternatives": [
+            "الصناعية"
+          ],
+          "matched": true,
+          "matched_value": "الصناعية"
+        },
+        {
+          "alternatives": [
+            "الإضرار بمصلحة صاحب العمل"
+          ],
+          "matched": true,
+          "matched_value": "الإضرار بمصلحة صاحب العمل"
+        }
+      ],
+      "answer": "يجب على العامل حفظ الأسرار الفنية والتجارية والصناعية للمنشأة، بما في ذلك المواد التي ينتجها أو التي أسهم في إنتاجها بصورة مباشرة أو غير مباشرة، وجميع الأسرار المهنية المتعلقة بالعمل أو المنشأة التي من شأن إفشائها الإضرار بمصلحة صاحب العمل.",
+      "clarifying_question": "",
+      "latency_s": 1.007830253103748
+    },
+    {
+      "id": 24,
+      "query": "بعد اكتشاف مخالفة العامل، ما المدة القصوى التي يجوز خلالها اتهامه بها وتوقيع الجزاء بعد التحقيق؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة التاسعة والستون",
+      "sources": [
+        "المادة التاسعة والستون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6924737691879272,
+      "reranker_score": 0.996494710445404,
+      "reranker_confidence": 0.7303688389413935,
+      "reranker_margin": 0.1570531129837036,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة التاسعة والستون",
+          "dense_score": 0.6924737691879272,
+          "reranker_score": 0.996494710445404,
+          "reranker_confidence": 0.7303688389413935,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الحادية والسبعون",
+          "dense_score": 0.6400126218795776,
+          "reranker_score": 0.8394415974617004,
+          "reranker_confidence": 0.6983475969420383,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثانية والسبعون",
+          "dense_score": 0.6369805335998535,
+          "reranker_score": 0.615058422088623,
+          "reranker_confidence": 0.6490938312197491,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "ثلاثين يوماً",
+          "30 يوماً"
+        ],
+        [
+          "كشفها"
+        ],
+        [
+          "انتهاء التحقيق",
+          "التحقيق"
+        ]
+      ],
+      "factual_coverage": 0.6666666666666666,
+      "fully_factual": false,
+      "fact_results": [
+        {
+          "alternatives": [
+            "ثلاثين يوماً",
+            "30 يوماً"
+          ],
+          "matched": true,
+          "matched_value": "ثلاثين يوماً"
+        },
+        {
+          "alternatives": [
+            "كشفها"
+          ],
+          "matched": false,
+          "matched_value": null
+        },
+        {
+          "alternatives": [
+            "انتهاء التحقيق",
+            "التحقيق"
+          ],
+          "matched": true,
+          "matched_value": "التحقيق"
+        }
+      ],
+      "answer": "المدة القصوى التي يجوز خلالها اتهام العامل وتوقيع الجزاء بعد التحقيق هي ثلاثون يوماً من اكتشاف المخالفة، وذلك بعد ثبوت المخالفة في حق العامل.",
+      "clarifying_question": "",
+      "latency_s": 0.8056206251494586
+    },
+    {
+      "id": 25,
+      "query": "كيف يتظلم العامل من قرار جزاء تأديبي وما المدد النظامية للاعتراض؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثانية والسبعون",
+      "sources": [
+        "المادة الثانية والسبعون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6963870525360107,
+      "reranker_score": 0.9527032375335693,
+      "reranker_confidence": 0.7216584958412414,
+      "reranker_margin": 0.7499933987855911,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثانية والسبعون",
+          "dense_score": 0.6963870525360107,
+          "reranker_score": 0.9527032375335693,
+          "reranker_confidence": 0.7216584958412414,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الحادية والسبعون",
+          "dense_score": 0.6231985092163086,
+          "reranker_score": 0.2027098387479782,
+          "reranker_confidence": 0.5505046363370913,
+          "dense_rank": 3,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الحادية والتسعون",
+          "dense_score": 0.6399376392364502,
+          "reranker_score": 0.19000916182994843,
+          "reranker_confidence": 0.5473598880519525,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "ثلاثين",
+          "30"
+        ],
+        [
+          "خمسة عشر",
+          "15"
+        ],
+        [
+          "المحاكم العمالية"
+        ],
+        [
+          "كتابة"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "ثلاثين",
+            "30"
+          ],
+          "matched": true,
+          "matched_value": "ثلاثين"
+        },
+        {
+          "alternatives": [
+            "خمسة عشر",
+            "15"
+          ],
+          "matched": true,
+          "matched_value": "خمسة عشر"
+        },
+        {
+          "alternatives": [
+            "المحاكم العمالية"
+          ],
+          "matched": true,
+          "matched_value": "المحاكم العمالية"
+        },
+        {
+          "alternatives": [
+            "كتابة"
+          ],
+          "matched": true,
+          "matched_value": "كتابة"
+        }
+      ],
+      "answer": "يتظلم العامل من قرار جزاء تأديبي بكتابة للجهة المختصة لدى صاحب العمل خلال ثلاثين يوماً من تاريخ إبلاغه بالقرار، عدا أيام العطل الرسمية. وإذا رفض تظلمه أو لم يبت فيه كتابة خلال خمسة عشر يوماً من تقديمه، يحق له الاعتراض أمام المحاكم العمالية خلال ثلاثين يوماً من تاريخ رفض تظلمه أو انتهاء المدة المحددة للبت فيه أيهما أقرب.",
+      "clarifying_question": "",
+      "latency_s": 1.2408782818820328
+    },
+    {
+      "id": 26,
+      "query": "ما الحالات العامة التي ينتهي فيها عقد العمل؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الرابعة والسبعون",
+      "sources": [
+        "المادة الرابعة والسبعون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7468054294586182,
+      "reranker_score": 0.9904360175132751,
+      "reranker_confidence": 0.7291740353692185,
+      "reranker_margin": 0.15531736612319946,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الرابعة والسبعون",
+          "dense_score": 0.7468054294586182,
+          "reranker_score": 0.9904360175132751,
+          "reranker_confidence": 0.7291740353692185,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة التاسعة والسبعون",
+          "dense_score": 0.6475626230239868,
+          "reranker_score": 0.8351186513900757,
+          "reranker_confidence": 0.6974361526760042,
+          "dense_rank": 3,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الخامسة والخمسون",
+          "dense_score": 0.6639211177825928,
+          "reranker_score": 0.6022887825965881,
+          "reranker_confidence": 0.6461797688755271,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "اتفق الطرفان"
+        ],
+        [
+          "انتهت المدة"
+        ],
+        [
+          "سن التقاعد"
+        ],
+        [
+          "القوة القاهرة"
+        ],
+        [
+          "إغلاق المنشأة"
+        ],
+        [
+          "انتهاء النشاط"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "اتفق الطرفان"
+          ],
+          "matched": true,
+          "matched_value": "اتفق الطرفان"
+        },
+        {
+          "alternatives": [
+            "انتهت المدة"
+          ],
+          "matched": true,
+          "matched_value": "انتهت المدة"
+        },
+        {
+          "alternatives": [
+            "سن التقاعد"
+          ],
+          "matched": true,
+          "matched_value": "سن التقاعد"
+        },
+        {
+          "alternatives": [
+            "القوة القاهرة"
+          ],
+          "matched": true,
+          "matched_value": "القوة القاهرة"
+        },
+        {
+          "alternatives": [
+            "إغلاق المنشأة"
+          ],
+          "matched": true,
+          "matched_value": "إغلاق المنشأة"
+        },
+        {
+          "alternatives": [
+            "انتهاء النشاط"
+          ],
+          "matched": true,
+          "matched_value": "انتهاء النشاط"
+        }
+      ],
+      "answer": "ينتهي عقد العمل في أي من الأحوال الآتية:\n1. إذا اتفق الطرفان على إنهائه، بشرط أن تكون موافقة العامل كتابية.\n2. إذا انتهت المدة المحددة في العقد، ما لم يكن العقد قد تجدد صراحة وفق أحكام هذا النظام؛ فيستمر إلى أجله.\n3. بناءً على إرادة أحد الطرفين في العقود غير المحددة المدة، وفقاً لما ورد في المادة (الخامسة والسبعين) من هذا النظام.\n4. بلوغ العامل سن التقاعد وفق ما تقضي به أحكام نظام التأمينات الاجتماعية، ما لم يتفق الطرفان على الاستمرار في العمل بعد هذه السن.\n5. القوة القاهرة.\n6. إغلاق المنشأة نهائياً.\n7. انتهاء النشاط الذي يعمل فيه العامل، ما لم يتفق على غير ذلك.\n8. صدور قرار، أو حكم نهائي من المحكمة المختصة؛ بإنهاء عقد العمل في أي من إجراءات الإفلاس المفتوحة وفق نظام الإفلاس.\n9. أي حالة أخرى ينص عليها نظام آخر.",
+      "clarifying_question": "",
+      "latency_s": 2.1546813840977848
+    },
+    {
+      "id": 27,
+      "query": "ماذا يترتب على عدم الالتزام بمهلة الإشعار عند إنهاء العقد غير محدد المدة؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة السادسة والسبعون",
+      "sources": [
+        "المادة السادسة والسبعون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7000879049301147,
+      "reranker_score": 0.976175844669342,
+      "reranker_confidence": 0.7263487616762319,
+      "reranker_margin": 0.39867764711380005,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة السادسة والسبعون",
+          "dense_score": 0.7000879049301147,
+          "reranker_score": 0.976175844669342,
+          "reranker_confidence": 0.7263487616762319,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الخامسة والسبعون",
+          "dense_score": 0.6134136915206909,
+          "reranker_score": 0.577498197555542,
+          "reranker_confidence": 0.640491538688748,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة السابعة والسبعون",
+          "dense_score": 0.5943310260772705,
+          "reranker_score": 0.15400181710720062,
+          "reranker_confidence": 0.5384245427808982,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "يدفع للطرف الآخر",
+          "دفع للطرف الآخر"
+        ],
+        [
+          "مهلة الإشعار"
+        ],
+        [
+          "مساوياً لأجر العامل",
+          "أجر العامل"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "يدفع للطرف الآخر",
+            "دفع للطرف الآخر"
+          ],
+          "matched": true,
+          "matched_value": "يدفع للطرف الآخر"
+        },
+        {
+          "alternatives": [
+            "مهلة الإشعار"
+          ],
+          "matched": true,
+          "matched_value": "مهلة الإشعار"
+        },
+        {
+          "alternatives": [
+            "مساوياً لأجر العامل",
+            "أجر العامل"
+          ],
+          "matched": true,
+          "matched_value": "مساوياً لأجر العامل"
+        }
+      ],
+      "answer": "إذا لم يراع الطرف الذي أنهى العقد غير محدد المدة المهلة المحددة للإشعار وفقاً للمادة (الخامسة والسبعين) من هذا النظام، فإنه يلتزم بأن يدفع للطرف الآخر عن مهلة الإشعار مبلغاً مساوياً لأجر العامل عن المهلة نفسها.",
+      "clarifying_question": "",
+      "latency_s": 0.9418932588305324
+    },
+    {
+      "id": 28,
+      "query": "هل ينتهي عقد العمل بوفاة صاحب العمل أو وفاة العامل؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة التاسعة والسبعون",
+      "sources": [
+        "المادة التاسعة والسبعون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7255265712738037,
+      "reranker_score": 0.9986957907676697,
+      "reranker_confidence": 0.7308020782717856,
+      "reranker_margin": 0.7277622520923615,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة التاسعة والسبعون",
+          "dense_score": 0.7255265712738037,
+          "reranker_score": 0.9986957907676697,
+          "reranker_confidence": 0.7308020782717856,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الرابعة والسبعون",
+          "dense_score": 0.6373892426490784,
+          "reranker_score": 0.2709335386753082,
+          "reranker_confidence": 0.5673220729789279,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الرابعة والستون",
+          "dense_score": 0.5997846126556396,
+          "reranker_score": 0.1284988671541214,
+          "reranker_confidence": 0.5320805861552519,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "لا ينقضي",
+          "لا ينتهي"
+        ],
+        [
+          "وفاة صاحب العمل"
+        ],
+        [
+          "وفاة العامل"
+        ],
+        [
+          "شهادة طبية"
+        ]
+      ],
+      "factual_coverage": 0.5,
+      "fully_factual": false,
+      "fact_results": [
+        {
+          "alternatives": [
+            "لا ينقضي",
+            "لا ينتهي"
+          ],
+          "matched": false,
+          "matched_value": null
+        },
+        {
+          "alternatives": [
+            "وفاة صاحب العمل"
+          ],
+          "matched": false,
+          "matched_value": null
+        },
+        {
+          "alternatives": [
+            "وفاة العامل"
+          ],
+          "matched": true,
+          "matched_value": "وفاة العامل"
+        },
+        {
+          "alternatives": [
+            "شهادة طبية"
+          ],
+          "matched": true,
+          "matched_value": "شهادة طبية"
+        }
+      ],
+      "answer": "ينتهي عقد العمل بوفاة العامل أو بعجزه عن أداء عمله، وذلك بموجب شهادة طبية معتمدة من الجهات الصحية المخولة أو من الطبيب المخول الذي يعينه صاحب العمل.",
+      "clarifying_question": "",
+      "latency_s": 0.7982881260104477
+    },
+    {
+      "id": 29,
+      "query": "متى يعتبر طلب الاستقالة مقبولاً إذا لم يرد صاحب العمل عليه، وكم يمكن تأجيل قبوله؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة التاسعة والسبعون مكرر",
+      "sources": [
+        "المادة التاسعة والسبعون مكرر"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7793894410133362,
+      "reranker_score": 0.9989683628082275,
+      "reranker_confidence": 0.7308556981049686,
+      "reranker_margin": 0.9729771111160517,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة التاسعة والسبعون مكرر",
+          "dense_score": 0.7793894410133362,
+          "reranker_score": 0.9989683628082275,
+          "reranker_confidence": 0.7308556981049686,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثانية والسبعون",
+          "dense_score": 0.6268399953842163,
+          "reranker_score": 0.025991251692175865,
+          "reranker_confidence": 0.5064974471505785,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الخامسة والثمانون",
+          "dense_score": 0.602226972579956,
+          "reranker_score": 0.004666096996515989,
+          "reranker_confidence": 0.5011665221326249,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "ثلاثون",
+          "30"
+        ],
+        [
+          "ستين",
+          "60"
+        ],
+        [
+          "إيضاح مسبب مكتوب",
+          "مسبب مكتوب"
+        ]
+      ],
+      "factual_coverage": 1.0,
+      "fully_factual": true,
+      "fact_results": [
+        {
+          "alternatives": [
+            "ثلاثون",
+            "30"
+          ],
+          "matched": true,
+          "matched_value": "ثلاثون"
+        },
+        {
+          "alternatives": [
+            "ستين",
+            "60"
+          ],
+          "matched": true,
+          "matched_value": "ستين"
+        },
+        {
+          "alternatives": [
+            "إيضاح مسبب مكتوب",
+            "مسبب مكتوب"
+          ],
+          "matched": true,
+          "matched_value": "إيضاح مسبب مكتوب"
+        }
+      ],
+      "answer": "يعد طلب الاستقالة مقبولاً إذا مضى على تقديمه (ثلاثون) يوماً دون رد من صاحب العمل. يمكن تأجيل قبول طلب الاستقالة لمدة لا تزيد على (ستين) يوماً إذا اقتضت مصلحة العمل ذلك، ووفق إيضاح مسبب مكتوب يقدم للعامل.",
+      "clarifying_question": "",
+      "latency_s": 0.9892676181625575
+    },
+    {
+      "id": 30,
+      "query": "ما شروط اتفاق عدم المنافسة وما أقصى مدة له بعد انتهاء علاقة العمل؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثالثة والثمانون",
+      "sources": [
+        "المادة الثالثة والثمانون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.5132061243057251,
+      "reranker_score": 0.15010415017604828,
+      "reranker_confidence": 0.5374557368731034,
+      "reranker_margin": 0.14312139805406332,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثالثة والثمانون",
+          "dense_score": 0.5132061243057251,
+          "reranker_score": 0.15010415017604828,
+          "reranker_confidence": 0.5374557368731034,
+          "dense_rank": 3,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الرابعة والسبعون",
+          "dense_score": 0.5372110605239868,
+          "reranker_score": 0.006982752121984959,
+          "reranker_confidence": 0.5017456809373891,
+          "dense_rank": 1,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثامنة والأربعون",
+          "dense_score": 0.5166240930557251,
+          "reranker_score": 0.0005209369701333344,
+          "reranker_confidence": 0.5001302342395881,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [
+        [
+          "محرراً",
+          "محرر"
+        ],
+        [
+          "الزمان"
+        ],
+        [
+          "المكان"
+        ],
+        [
+          "نوع العمل"
+        ],
+        [
+          "سنتين",
+          "سنتان",
+          "2"
+        ]
+      ],
+      "factual_coverage": 0.8,
+      "fully_factual": false,
+      "fact_results": [
+        {
+          "alternatives": [
+            "محرراً",
+            "محرر"
+          ],
+          "matched": false,
+          "matched_value": null
+        },
+        {
+          "alternatives": [
+            "الزمان"
+          ],
+          "matched": true,
+          "matched_value": "الزمان"
+        },
+        {
+          "alternatives": [
+            "المكان"
+          ],
+          "matched": true,
+          "matched_value": "المكان"
+        },
+        {
+          "alternatives": [
+            "نوع العمل"
+          ],
+          "matched": true,
+          "matched_value": "نوع العمل"
+        },
+        {
+          "alternatives": [
+            "سنتين",
+            "سنتان",
+            "2"
+          ],
+          "matched": true,
+          "matched_value": "سنتين"
+        }
+      ],
+      "answer": "شروط اتفاق عدم المنافسة هي: أن يكون العمل المنوط بالعامل يسمح له بمعرفة عملاء صاحب العمل، وأن يكون الشرط مكتوباً ومحدداً من حيث الزمان والمكان ونوع العمل، وأن لا تزيد مدته على سنتين من تاريخ انتهاء العلاقة بين الطرفين.",
+      "clarifying_question": "",
+      "latency_s": 0.9053452911321074
+    },
+    {
+      "id": 31,
+      "query": "هل أستحق مكافأة نهاية الخدمة؟",
+      "expected_status": "clarify",
+      "actual_status": "clarify",
+      "status_correct": true,
+      "expected_article": "المادة الخامسة والثمانون",
+      "sources": [
+        "المادة الخامسة والثمانون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6396759748458862,
+      "reranker_score": 0.8516536355018616,
+      "reranker_confidence": 0.700913915167331,
+      "reranker_margin": 0.13003051280975342,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الخامسة والثمانون",
+          "dense_score": 0.6396759748458862,
+          "reranker_score": 0.8516536355018616,
+          "reranker_confidence": 0.700913915167331,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الرابعة والثمانون",
+          "dense_score": 0.6199766397476196,
+          "reranker_score": 0.7216231226921082,
+          "reranker_confidence": 0.6729643395636957,
+          "dense_rank": 3,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة السابعة والثمانون",
+          "dense_score": 0.6224216222763062,
+          "reranker_score": 0.1191825419664383,
+          "reranker_confidence": 0.5297604162297161,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": null,
+      "clarification_correct": true,
+      "out_of_scope_correct": null,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "",
+      "clarifying_question": "ما هي مدة خدمتك الفعلية في الشركة؟",
+      "latency_s": 0.5480892239138484
+    },
+    {
+      "id": 32,
+      "query": "هل أستطيع ترك عملي الآن دون إشعار مع الاحتفاظ بحقوقي؟",
+      "expected_status": "clarify",
+      "actual_status": "answer",
+      "status_correct": false,
+      "expected_article": "المادة الحادية والثمانون",
+      "sources": [
+        "المادة الحادية والثمانون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7010983228683472,
+      "reranker_score": 0.9881802797317505,
+      "reranker_confidence": 0.7287283437237368,
+      "reranker_margin": 0.9369987137615681,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الحادية والثمانون",
+          "dense_score": 0.7010983228683472,
+          "reranker_score": 0.9881802797317505,
+          "reranker_confidence": 0.7287283437237368,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثمانون",
+          "dense_score": 0.5862848162651062,
+          "reranker_score": 0.05118156597018242,
+          "reranker_confidence": 0.5127925990405183,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثانية والثمانون بعد المائة",
+          "dense_score": 0.5831686854362488,
+          "reranker_score": 0.0036852220073342323,
+          "reranker_confidence": 0.5009213044591581,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": null,
+      "clarification_correct": false,
+      "out_of_scope_correct": null,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "أستطيع ترك عملك الآن دون إشعار مع الاحتفاظ بحقوقك، وذلك وفقاً للمادة الحادية والثمانون من نظام العمل السعودي، إذا لم يقم صاحب العمل بالوفاء بالتزاماته العقدية أو النظامية الجوهرية إزاءك، أو إذا ثبت أن صاحب العمل أو من يمثله قد أدخل عليك الغش وقت التعاقد، أو إذا كلفك صاحب العمل دون رضاك بعمل يختلف جوهرياً عن العمل المتفق عليه، أو إذا وقع من صاحب العمل أو من أحد أفراد أسرته، أو من المدير المسؤول اعتداء يتسم بالعنف أو سلوك مخل بالآداب، أو إذا اتسمت معاملة صاحب العمل أو المدير المسؤول بمظاهر من القسوة والجور أو الإهانة، أو إذا كان في مقر العمل خطر جسيم يهدد سلامتك أو صحتك، بشرط أن يكون صاحب العمل قد علم بوجوده ولم يتخذ من الإجراءات ما يدل على إزالته.",
+      "clarifying_question": "",
+      "latency_s": 1.885744895087555
+    },
+    {
+      "id": 33,
+      "query": "هل يستطيع صاحب العمل فصلي دون مكافأة أو إشعار؟",
+      "expected_status": "clarify",
+      "actual_status": "answer",
+      "status_correct": false,
+      "expected_article": "المادة الثمانون",
+      "sources": [
+        "المادة الثمانون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6493774652481079,
+      "reranker_score": 0.9930410385131836,
+      "reranker_confidence": 0.7296881657642806,
+      "reranker_margin": 0.1549060344696045,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثمانون",
+          "dense_score": 0.6493774652481079,
+          "reranker_score": 0.9930410385131836,
+          "reranker_confidence": 0.7296881657642806,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الحادية والثمانون",
+          "dense_score": 0.6291198134422302,
+          "reranker_score": 0.8381350040435791,
+          "reranker_confidence": 0.6980722809725921,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة السادسة عشرة بعد المائة",
+          "dense_score": 0.6154159307479858,
+          "reranker_score": 0.04094276204705238,
+          "reranker_confidence": 0.5102342609024139,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": null,
+      "clarification_correct": false,
+      "out_of_scope_correct": null,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "لا يستطيع صاحب العمل فصلي دون مكافأة العامل أو إشعاره أو تعويضه، إلا في الحالات المنصوص عليها في المادة الثمانون من نظام العمل السعودي، وهي: الاعتداء على صاحب العمل أو المدير المسؤول، عدم أداء الالتزامات الجوهرية، السلوك السيئ، إلحاق خسارة مادية، التزوير للحصول على العمل، التعيين تحت الاختبار، الغياب المتكرر، أو استغلال المركز الوظيفي بطريقة غير مشروعة.",
+      "clarifying_question": "",
+      "latency_s": 1.2880297319497913
+    },
+    {
+      "id": 34,
+      "query": "هل أستطيع المنافسة مع صاحب عملي السابق بعد انتهاء عقدي؟",
+      "expected_status": "answer",
+      "actual_status": "out_of_scope",
+      "status_correct": false,
+      "expected_article": "المادة الثالثة والثمانون",
+      "sources": [],
+      "retrieval_hit": false,
+      "retrieval_k": 3,
+      "retrieval_score": 0.5649911165237427,
+      "reranker_score": 0.0624854676425457,
+      "reranker_confidence": 0.5156162861784584,
+      "reranker_margin": 0.04833210911601782,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثالثة والثمانون",
+          "dense_score": 0.5649911165237427,
+          "reranker_score": 0.0624854676425457,
+          "reranker_confidence": 0.5156162861784584,
+          "dense_rank": 3,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الرابعة والخمسون",
+          "dense_score": 0.587337076663971,
+          "reranker_score": 0.014153358526527882,
+          "reranker_confidence": 0.5035382805668523,
+          "dense_rank": 1,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثامنة والأربعون",
+          "dense_score": 0.5737944841384888,
+          "reranker_score": 0.00037766117020510137,
+          "reranker_confidence": 0.5000944152914291,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": true,
+      "abstention_reason": "gray_zone_abstention",
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": false,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "لم أتمكن من تحديد نص نظامي ذي صلة بدرجة ثقة كافية للإجابة بدقة.",
+      "clarifying_question": "",
+      "latency_s": 1.036590201081708
+    },
+    {
+      "id": 35,
+      "query": "هل يحق لصاحب العمل تكليفي بعمل مختلف عن وظيفتي الحالية؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الستون",
+      "sources": [
+        "المادة الستون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6308481097221375,
+      "reranker_score": 0.9136636257171631,
+      "reranker_confidence": 0.7137492684877044,
+      "reranker_margin": 0.02664172649383545,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الستون",
+          "dense_score": 0.6308481097221375,
+          "reranker_score": 0.9136636257171631,
+          "reranker_confidence": 0.7137492684877044,
+          "dense_rank": 2,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثامنة والخمسون",
+          "dense_score": 0.6633204221725464,
+          "reranker_score": 0.8870218992233276,
+          "reranker_confidence": 0.7082752150015215,
+          "dense_rank": 1,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثامنة والثلاثون",
+          "dense_score": 0.6175717711448669,
+          "reranker_score": 0.38152334094047546,
+          "reranker_confidence": 0.594240461642383,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "لا يحق لصاحب العمل تكليفي بعمل مختلف عن وظيفتي الحالية إلا بموافقتي الكتابية، أو في حالات الضرورة التي قد تقتضيها ظروف عارضة ولمدة لا تتجاوز ثلاثين يوماً في السنة، وذلك وفقاً للمادة الستون من نظام العمل.",
+      "clarifying_question": "",
+      "latency_s": 0.9173593630548567
+    },
+    {
+      "id": 36,
+      "query": "هل يحق لي الاعتراض على الجزاء التأديبي الذي صدر بحقي؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثانية والسبعون",
+      "sources": [
+        "المادة الثانية والسبعون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6165314316749573,
+      "reranker_score": 0.21454696357250214,
+      "reranker_confidence": 0.5534319401628233,
+      "reranker_margin": 0.08500851690769196,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثانية والسبعون",
+          "dense_score": 0.6165314316749573,
+          "reranker_score": 0.21454696357250214,
+          "reranker_confidence": 0.5534319401628233,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الحادية والسبعون",
+          "dense_score": 0.5978894829750061,
+          "reranker_score": 0.12953844666481018,
+          "reranker_confidence": 0.5323394024801917,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة السبعون",
+          "dense_score": 0.5693010091781616,
+          "reranker_score": 0.06541690230369568,
+          "reranker_confidence": 0.5163483959206031,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "يحق لك الاعتراض على الجزاء التأديبي الذي صدر بحقك أمام المحاكم العمالية خلال (ثلاثين) يوماً - عدا أيام العطل الرسمية - من تاريخ رفض تظلمك أو انتهاء المدة المحددة للبت في التظلم أيهما أقرب.",
+      "clarifying_question": "",
+      "latency_s": 0.9296472498681396
+    },
+    {
+      "id": 37,
+      "query": "هل يمكن إخضاعي لفترة تجربة ثانية مع نفس صاحب العمل؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الرابعة والخمسون",
+      "sources": [
+        "المادة الرابعة والخمسون"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.7243164777755737,
+      "reranker_score": 0.9953418970108032,
+      "reranker_confidence": 0.7301417548813237,
+      "reranker_margin": 0.9215094447135925,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الرابعة والخمسون",
+          "dense_score": 0.7243164777755737,
+          "reranker_score": 0.9953418970108032,
+          "reranker_confidence": 0.7301417548813237,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثالثة والخمسون",
+          "dense_score": 0.6003533601760864,
+          "reranker_score": 0.0738324522972107,
+          "reranker_confidence": 0.518449732689413,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة السابعة والخمسون بعد المائة",
+          "dense_score": 0.5695943832397461,
+          "reranker_score": 0.009656139649450779,
+          "reranker_confidence": 0.5024140161552786,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "لا يجوز إخضاعك لفترة تجربة ثانية مع نفس صاحب العمل إلا إذا كان ذلك باتفاق الطرفين كتابة، بشرط أن تكون الفترة في مهنة أو عمل آخر، أو أن يكون قد مضى على انتهاء علاقتك بصاحب العمل مدة لا تقل عن ستة أشهر.",
+      "clarifying_question": "",
+      "latency_s": 0.9250074799638242
+    },
+    {
+      "id": 38,
+      "query": "هل عقدي مع صاحب العمل ما زال سارياً بعد انتقال ملكية المنشأة؟",
+      "expected_status": "answer",
+      "actual_status": "answer",
+      "status_correct": true,
+      "expected_article": "المادة الثامنة عشرة",
+      "sources": [
+        "المادة الثامنة عشرة"
+      ],
+      "retrieval_hit": true,
+      "retrieval_k": 3,
+      "retrieval_score": 0.6911963224411011,
+      "reranker_score": 0.9636805653572083,
+      "reranker_confidence": 0.7238581101319441,
+      "reranker_margin": 0.9265868775546551,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثامنة عشرة",
+          "dense_score": 0.6911963224411011,
+          "reranker_score": 0.9636805653572083,
+          "reranker_confidence": 0.7238581101319441,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثالثة والثمانون",
+          "dense_score": 0.5548490285873413,
+          "reranker_score": 0.03709368780255318,
+          "reranker_confidence": 0.509272358789612,
+          "dense_rank": 3,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة التاسعة والسبعون",
+          "dense_score": 0.5676006078720093,
+          "reranker_score": 0.03380703926086426,
+          "reranker_confidence": 0.5084509549363146,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": false,
+      "abstention_reason": null,
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": true,
+      "clarification_correct": null,
+      "out_of_scope_correct": null,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "تبقى عقود العمل نافذة في الحالين بعد انتقال ملكية المنشأة، وتعد الخدمة مستمرة، وذلك وفقاً للمادة الثامنة عشرة.",
+      "clarifying_question": "",
+      "latency_s": 0.7134243990294635
+    },
+    {
+      "id": 39,
+      "query": "كم نسبة ضريبة القيمة المضافة في السعودية؟",
+      "expected_status": "out_of_scope",
+      "actual_status": "out_of_scope",
+      "status_correct": true,
+      "expected_article": null,
+      "sources": [],
+      "retrieval_hit": null,
+      "retrieval_k": 3,
+      "retrieval_score": 0.45505061745643616,
+      "reranker_score": 0.0018051672959700227,
+      "reranker_confidence": 0.5004512917014432,
+      "reranker_margin": 0.00092789635527879,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة السادسة والعشرون",
+          "dense_score": 0.45505061745643616,
+          "reranker_score": 0.0018051672959700227,
+          "reranker_confidence": 0.5004512917014432,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثالثة والأربعون",
+          "dense_score": 0.41440698504447937,
+          "reranker_score": 0.0008772709406912327,
+          "reranker_confidence": 0.5002193177211072,
+          "dense_rank": 3,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الأربعون",
+          "dense_score": 0.4155966639518738,
+          "reranker_score": 0.00021229016419965774,
+          "reranker_confidence": 0.5000530725408506,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": true,
+      "abstention_reason": "reranker_score_too_low",
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": null,
+      "clarification_correct": null,
+      "out_of_scope_correct": true,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "لم أتمكن من تحديد نص نظامي ذي صلة بدرجة ثقة كافية للإجابة بدقة.",
+      "clarifying_question": "",
+      "latency_s": 0.06125822989270091
+    },
+    {
+      "id": 40,
+      "query": "ما عقوبة تجاوز السرعة في الطريق؟",
+      "expected_status": "out_of_scope",
+      "actual_status": "out_of_scope",
+      "status_correct": true,
+      "expected_article": null,
+      "sources": [],
+      "retrieval_hit": null,
+      "retrieval_k": 3,
+      "retrieval_score": 0.47145920991897583,
+      "reranker_score": 0.01205327920615673,
+      "reranker_confidence": 0.5030132833204242,
+      "reranker_margin": 0.004210487008094788,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثلاثون بعد المائتين",
+          "dense_score": 0.47145920991897583,
+          "reranker_score": 0.01205327920615673,
+          "reranker_confidence": 0.5030132833204242,
+          "dense_rank": 2,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة السبعون",
+          "dense_score": 0.4872470200061798,
+          "reranker_score": 0.007842792198061943,
+          "reranker_confidence": 0.5019606879994657,
+          "dense_rank": 1,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة السادسة والستون",
+          "dense_score": 0.4626222848892212,
+          "reranker_score": 0.004417113494127989,
+          "reranker_confidence": 0.5011042765780809,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": true,
+      "abstention_reason": "reranker_score_too_low",
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": null,
+      "clarification_correct": null,
+      "out_of_scope_correct": true,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "لم أتمكن من تحديد نص نظامي ذي صلة بدرجة ثقة كافية للإجابة بدقة.",
+      "clarifying_question": "",
+      "latency_s": 0.0800342878792435
+    },
+    {
+      "id": 41,
+      "query": "ما شروط الحصول على رخصة قيادة؟",
+      "expected_status": "out_of_scope",
+      "actual_status": "out_of_scope",
+      "status_correct": true,
+      "expected_article": null,
+      "sources": [],
+      "retrieval_hit": null,
+      "retrieval_k": 3,
+      "retrieval_score": 0.5570005774497986,
+      "reranker_score": 0.08074625581502914,
+      "reranker_confidence": 0.5201756031379681,
+      "reranker_margin": 0.04562843590974808,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثالثة والثلاثون",
+          "dense_score": 0.5570005774497986,
+          "reranker_score": 0.08074625581502914,
+          "reranker_confidence": 0.5201756031379681,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثالثة والسبعون بعد المائة",
+          "dense_score": 0.5258036851882935,
+          "reranker_score": 0.03511781990528107,
+          "reranker_confidence": 0.508778552807428,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الخامسة والستون بعد المائة",
+          "dense_score": 0.5018914937973022,
+          "reranker_score": 0.0009422106086276472,
+          "reranker_confidence": 0.5002355526347307,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": true,
+      "abstention_reason": "gray_zone_abstention",
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": null,
+      "clarification_correct": null,
+      "out_of_scope_correct": true,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "لم أتمكن من تحديد نص نظامي ذي صلة بدرجة ثقة كافية للإجابة بدقة.",
+      "clarifying_question": "",
+      "latency_s": 1.2249226740095764
+    },
+    {
+      "id": 42,
+      "query": "ما شروط إصدار سجل تجاري لمؤسسة جديدة؟",
+      "expected_status": "out_of_scope",
+      "actual_status": "out_of_scope",
+      "status_correct": true,
+      "expected_article": null,
+      "sources": [],
+      "retrieval_hit": null,
+      "retrieval_k": 3,
+      "retrieval_score": 0.5448747277259827,
+      "reranker_score": 0.12036783993244171,
+      "reranker_confidence": 0.530055680473697,
+      "reranker_margin": 0.11834243242628872,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الخامسة عشرة",
+          "dense_score": 0.5448747277259827,
+          "reranker_score": 0.12036783993244171,
+          "reranker_confidence": 0.530055680473697,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثالثة عشرة",
+          "dense_score": 0.5003262758255005,
+          "reranker_score": 0.0020254075061529875,
+          "reranker_confidence": 0.5005063517034387,
+          "dense_rank": 3,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثلاثون",
+          "dense_score": 0.5165040493011475,
+          "reranker_score": 0.001299691735766828,
+          "reranker_confidence": 0.5003249228882034,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": true,
+      "abstention_reason": "gray_zone_abstention",
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": null,
+      "clarification_correct": null,
+      "out_of_scope_correct": true,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "لم أتمكن من تحديد نص نظامي ذي صلة بدرجة ثقة كافية للإجابة بدقة.",
+      "clarifying_question": "",
+      "latency_s": 1.4266675529070199
+    },
+    {
+      "id": 43,
+      "query": "كم نسبة اشتراك الموظف في التأمينات الاجتماعية؟",
+      "expected_status": "out_of_scope",
+      "actual_status": "out_of_scope",
+      "status_correct": true,
+      "expected_article": null,
+      "sources": [],
+      "retrieval_hit": null,
+      "retrieval_k": 3,
+      "retrieval_score": 0.5409024953842163,
+      "reranker_score": 0.0069566271267831326,
+      "reranker_confidence": 0.5017391497679045,
+      "reranker_margin": 0.0026082522235810757,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الرابعة والأربعون بعد المائة",
+          "dense_score": 0.5409024953842163,
+          "reranker_score": 0.0069566271267831326,
+          "reranker_confidence": 0.5017391497679045,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة الثالثة والأربعون بعد المائة",
+          "dense_score": 0.5398544669151306,
+          "reranker_score": 0.004348374903202057,
+          "reranker_confidence": 0.5010870920128735,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثالثة والعشرون بعد المائة",
+          "dense_score": 0.5120041370391846,
+          "reranker_score": 0.0006841684225946665,
+          "reranker_confidence": 0.5001710420989768,
+          "dense_rank": 3,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": true,
+      "abstention_reason": "reranker_score_too_low",
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": null,
+      "clarification_correct": null,
+      "out_of_scope_correct": true,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "لم أتمكن من تحديد نص نظامي ذي صلة بدرجة ثقة كافية للإجابة بدقة.",
+      "clarifying_question": "",
+      "latency_s": 0.04845182807184756
+    },
+    {
+      "id": 44,
+      "query": "ما عقوبة التأخر في سداد ضريبة القيمة المضافة؟",
+      "expected_status": "out_of_scope",
+      "actual_status": "out_of_scope",
+      "status_correct": true,
+      "expected_article": null,
+      "sources": [],
+      "retrieval_hit": null,
+      "retrieval_k": 3,
+      "retrieval_score": 0.564454197883606,
+      "reranker_score": 0.11807221919298172,
+      "reranker_confidence": 0.5294838098179888,
+      "reranker_margin": 0.08696085959672928,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الرابعة والتسعون",
+          "dense_score": 0.564454197883606,
+          "reranker_score": 0.11807221919298172,
+          "reranker_confidence": 0.5294838098179888,
+          "dense_rank": 1,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة التاسعة والعشرون بعد المائتين",
+          "dense_score": 0.5201153755187988,
+          "reranker_score": 0.03111135959625244,
+          "reranker_confidence": 0.5077772126013556,
+          "dense_rank": 3,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة السابعة والتسعون",
+          "dense_score": 0.5412766337394714,
+          "reranker_score": 0.005357291083782911,
+          "reranker_confidence": 0.501339319567678,
+          "dense_rank": 2,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": true,
+      "abstention_reason": "gray_zone_abstention",
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": null,
+      "clarification_correct": null,
+      "out_of_scope_correct": true,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "لم أتمكن من تحديد نص نظامي ذي صلة بدرجة ثقة كافية للإجابة بدقة.",
+      "clarifying_question": "",
+      "latency_s": 1.338331202045083
+    },
+    {
+      "id": 45,
+      "query": "ما شروط تجديد جواز السفر السعودي؟",
+      "expected_status": "out_of_scope",
+      "actual_status": "out_of_scope",
+      "status_correct": true,
+      "expected_article": null,
+      "sources": [],
+      "retrieval_hit": null,
+      "retrieval_k": 3,
+      "retrieval_score": 0.5028231739997864,
+      "reranker_score": 0.022460510954260826,
+      "reranker_confidence": 0.5056148916930521,
+      "reranker_margin": 0.01681177970021963,
+      "retrieval_candidates": [
+        {
+          "article_heading": "المادة الثلاثون",
+          "dense_score": 0.5028231739997864,
+          "reranker_score": 0.022460510954260826,
+          "reranker_confidence": 0.5056148916930521,
+          "dense_rank": 3,
+          "rerank_rank": 1
+        },
+        {
+          "article_heading": "المادة السابعة والثلاثون",
+          "dense_score": 0.503743588924408,
+          "reranker_score": 0.005648731254041195,
+          "reranker_confidence": 0.5014121790585088,
+          "dense_rank": 2,
+          "rerank_rank": 2
+        },
+        {
+          "article_heading": "المادة الثالثة والثلاثون",
+          "dense_score": 0.5287966132164001,
+          "reranker_score": 0.004352811723947525,
+          "reranker_confidence": 0.5010882012128112,
+          "dense_rank": 1,
+          "rerank_rank": 3
+        }
+      ],
+      "abstained": true,
+      "abstention_reason": "reranker_score_too_low",
+      "answered_with_wrong_article": false,
+      "answer_behavior_correct": null,
+      "clarification_correct": null,
+      "out_of_scope_correct": true,
+      "expected_facts": [],
+      "factual_coverage": null,
+      "fully_factual": null,
+      "fact_results": [],
+      "answer": "لم أتمكن من تحديد نص نظامي ذي صلة بدرجة ثقة كافية للإجابة بدقة.",
+      "clarifying_question": "",
+      "latency_s": 0.05221225693821907
+    }
+  ]
+}
