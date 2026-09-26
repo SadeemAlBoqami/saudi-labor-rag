@@ -1,8 +1,12 @@
 services:
   llama-service:
-    image: sadeemalboqami/saudi-labor-llama:cuda124
+    image: ghcr.io/ggml-org/llama.cpp:server-cuda
 
     runtime: nvidia
+
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
 
     environment:
       NVIDIA_VISIBLE_DEVICES: all
@@ -15,29 +19,35 @@ services:
       - 0.0.0.0
       - --port
       - "8080"
+      - --ctx-size
+      - "4096"
+      - --parallel
+      - "1"
+      - --n-gpu-layers
+      - "99"
 
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
-      interval: 5s
-      timeout: 3s
-      retries: 20
-      start_period: 20s
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 10m
 
   rag-service:
-    image: sadeemalboqami/saudi-labor-rag:server-cuda124
+    build:
+      context: .
+      dockerfile: Dockerfile
 
-    runtime: nvidia
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
 
     environment:
-      NVIDIA_VISIBLE_DEVICES: all
-      NVIDIA_DRIVER_CAPABILITIES: compute,utility
       LLM_BASE_URL: http://llama-service:8080
 
     depends_on:
       llama-service:
         condition: service_healthy
 
-    volumes:
-      - ./benchmarks:/app/benchmarks
-
-    command: python3 -m evaluation.evaluate_rag
+    ports:
+      - "8000:8000"
